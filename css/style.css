@@ -17,3 +17,18 @@ body{
     font-family: 'Press Start 2P', cursive;
 }
 
+.avatar_icon::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    bottom: 15px;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    background-color: #3284FF;
+}
+
+a:hover{
+    text-decoration: none !important ; 
+}
