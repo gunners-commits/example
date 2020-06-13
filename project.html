@@ -14,254 +14,852 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div style="height: initial;position: sticky left: 0;"
-                class="col-md-2 col-xl-1 d-none d-md-block bg-light sidebar  border border-top-0 border-bottom-0 border-left-0 border-muted border-right-1">
-                <div class="card-collumns col-1 pl-xl-0 ml-xl-0 bg-light">
+            <div class="col-1 px-0">
+                <div style="height: 100vh !important; position: fixed; top: 0; width: 150px !important; "
+                    class="d-none d-md-block col-1 h-100 px-0 mx-0 bg-light sidebar  border border-top-0 border-bottom-1 border-left-0 border-muted border-right-1">
+                    <div class="card-collumns col-12 px-2 mb-0 pb-2 ml-0 " style="position: unset !important;">
 
-                    <ul class="nav flex-column align-items-center">
-                        <li class="nav-item mb-5">
-                            <a href="" class="nav-link ">
-                                <img src="./assets/img/logo.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a href="" class="nav-link text-dark d-flex flex-column align-items-center">
-                                <svg class="d-block" width="25" aria-hidden="true" focusable="false" data-prefix="fas"
-                                    data-icon="briefcase" class="svg-inline--fa fa-briefcase fa-w-16" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
-                                    </path>
-                                </svg>
-                                Проект
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a href="./chats.html" class="nav-link text-muted d-flex flex-column align-items-center">
-                                <svg class="d-block " width="25" aria-hidden="true" focusable="false" data-prefix="far"
-                                    data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img"
+                        <ul class="nav flex-column align-items-center ">
+                            <li class="nav-item mb-sm-5">
+                                <a href="" class="">
+                                    <img src="./assets/img/logo.png" alt="">
+                                </a>
+                            </li>
+                            <li class="d-none d-md-block nav-item mb-3 w-50">
+                                <a href="" class="nav-link text-dark d-flex flex-column px-0  align-items-center">
+                                    <svg class="d-block" width="25" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="briefcase"
+                                        class="svg-inline--fa fa-briefcase fa-w-16" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
+                                        </path>
+                                    </svg>
+
+                                    <p class="my-0 mx-0 px-0 d-none d-lg-block">Проект</p>
+                                </a>
+                            </li>
+                            <li class="d-none d-md-block  nav-item mb-3 w-50">
+                                <a href="./chats.html"
+                                    class="nav-link text-muted d-flex flex-column px-0  align-items-center"">
+                                <svg class=" d-block " width=" 25" aria-hidden="true" focusable="false"
+                                    data-prefix="far" data-icon="comment-alt"
+                                    class="svg-inline--fa fa-comment-alt fa-w-16" role="img"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288z">
                                     </path>
-                                </svg>
-                                Чаты
-                            </a>
+                                    </svg>
+                                    <p class="my-0 mx-0 px-0 d-none d-lg-block">Чаты</p>
 
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a href="" class="nav-link text-muted d-flex flex-column align-items-center">
-                                <svg class="d-block" width="25" aria-hidden="true" focusable="false" data-prefix="fas"
+                                </a>
+
+                            </li>
+                            <li class="d-none d-md-block  d-none d-md-block w-50 nav-item mb-3">
+                                <a href="" class="nav-link text-muted d-flex flex-column px-0  align-items-center"">
+                                <svg class=" d-block" width="25" aria-hidden="true" focusable="false" data-prefix="fas"
                                     data-icon="users" class="svg-inline--fa fa-users fa-w-20" role="img"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                     <path fill="currentColor"
                                         d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
                                     </path>
-                                </svg>
-                                Клиенты
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a href="" class="nav-link text-muted d-flex flex-column align-items-center">
-                                <svg class="d-block" width="25" aria-hidden="true" focusable="false" data-prefix="fab"
-                                    data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14"
-                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                    <path fill="currentColor"
-                                        d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
-                                    </path>
-                                </svg>
-                                Рассылки
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3 pos fixed-bottom col-md-2 col-xl-1">
-                            <a href="" class="nav-link text-muted d-flex flex-column align-items-center">
-                                помощь
-                            </a>
-                        </li>
-                    </ul>
+                                    </svg>
+                                    <p class="my-0 mx-0 px-0 d-none d-lg-block">Клиенты</p>
+                                </a>
+                            </li>
+                            <li class="d-none d-md-block  nav-item mb-3 w-50">
+                                <a href="" class="nav-link text-muted d-flex flex-column px-0  align-items-center">
+                                    <svg class=" d-block" width="25" aria-hidden="true" focusable="false"
+                                        data-prefix="fab" data-icon="telegram-plane"
+                                        class="svg-inline--fa fa-telegram-plane fa-w-14" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                        </path>
+                                    </svg>
+
+                                    <p class="my-0 mx-0 px-0 d-none d-lg-block">Рассылки</p>
+                                </a>
+                            </li>
+                            <li class="d-none d-md-block  nav-item mb-3 w-50 position-absolute"
+                                style=" bottom:0 !important">
+                                <a href="" class="nav-link text-muted d-flex flex-column px-0  align-items-center">
+
+                                    <p class="d-none d-lg-block align-self-center">Помощь</p>
+                                    <p class="d-block d-lg-none"><i class="fas fa-sliders-h"></i></p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class=" col-md-10 col-xl-11 p-0 m-0">
-                <div aria-label="breadcrumb "
-                    class=" border border-top-0 border-bottom-1 border-left-0  border-top-0 border-muted border-right-0 ">
-                    <ol class="breadcrumb bg-white pb-0">
-                        <li class="breadcrumb-item "><a href="#" class="text-dark">Women Strategy Club</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Проект</li>
-                    </ol>
+            <div class=" col-md-11 p-0 m-0">
+
+
+                <div style="position: sticky; top: 0; z-index: 10;"
+                    class="navbar bg-white d-flex justify-content-between border border-top-0 border-bottom-1 border-left-0  border-top-0 border-muted border-right-0  align-items-start justify-content-between">
+                    <div class="col-3 d-md-none">
+                        <button class="px-0 py-0 mt-2 d-md-none navbar-toggler collapsed" type="button"
+                            data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="navbar-collapse collapse hide" id="navbarsExample06">
+                            <ul class="navbar-nav mr-auto ">
+                                <li class="nav-item ">
+                                    <a class="nav-link d-flex text-dark align-items-center" href="#">
+                                        <svg style="min-width: 25px !important;" width="25" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="briefcase"
+                                            class="svg-inline--fa fa-briefcase fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
+                                            </path>
+                                        </svg>
+                                        <p class="ml-3 mb-0 h5 ">Проект</p>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link d-flex text-muted" href="#">
+                                        <svg style="min-width: 25px !important;" class=" d-block " width=" 25" aria-hidden="true" focusable="false"
+                                            data-prefix="far" data-icon="comment-alt"
+                                            class="svg-inline--fa fa-comment-alt fa-w-16" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288z">
+                                            </path>
+                                        </svg>
+                                        <p class="ml-3 mb-0 h5 ">Чаты</p>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link d-flex text-muted" href="#">
+                                        <svg style="min-width: 25px !important;" class=" d-block" width="25" aria-hidden="true" focusable="false"
+                                            data-prefix="fab" data-icon="telegram-plane"
+                                            class="svg-inline--fa fa-telegram-plane fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                            </path>
+                                        </svg>
+                                        <p class="ml-3 mb-0 h5 ">Клиенты</p>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link d-flex text-muted" href="#">
+                                        <i class="fas fa-sliders-h mt-2"></i>
+                                        <p class="ml-3 mb-0 h5 ">Помощь</p>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div aria-label="breadcrumb " class="col-9 align-self-start d-inline-block px-0 mx-0"">
+                        <ol class="breadcrumb bg-white pb-0 px-0 mx-0" >
+                            <li class="breadcrumb-item "><a href="#" class="text-dark">Women Strategy Club</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Проект</li>
+                        </ol>
+
+
+                    </div>
+
+
                 </div>
-                <div class="col-md-10 col-xl-10pl-5 ml-1 pr-5 pt-5">
+                <div class="col-md-10 col-xl-10 pl-3 ml-1 pr-3 pt-5">
                     <form class="pl-md-5">
                         <div class="mb-5">
-                            <h3>Информация</h3>
+                            <h3 class="mb-5">Информация</h3>
                             <div class="form-group row mt-3">
-                                <label for="newpassword" class="col-sm-3 col-xl-3 col-md-4 col-form-label text-secondary">Новый
-                                    пароль</label>
+                                <label for="newpassword"
+                                    class="col-sm-3 col-xl-3 col-md-4 col-form-label text-secondary">Название</label>
                                 <div class=" col-md-6">
-                                    <input type="password" class="form-control" id="newpassword"/>
+                                    <input type="password" class="form-control" id="newpassword" />
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-xl-3  col-md-4 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class=" col-md-6">
-                                    <input type="password" class="form-control" id="newpassword"/>
+
+                            <div class="form-group row mt-3">
+                                <label for="newpassword"
+                                    class="col-sm-3 col-xl-3 col-4 col-md-4 col-form-label text-secondary">Активный</label>
+                                <div class="col-6 col-md-6">
+                                    <a href="">
+                                        <div
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">
+                                            OK</div>
+                                    </a>
                                 </div>
+                            </div>
+                            <div class="custom-control custom-switch mt-3">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Принимать запросы</label>
                             </div>
                         </div>
+
                         <div class="mb-5">
-                            <h3>Каналы</h3>
-                            <div class="col-md-10">
+                            <h3 class="mb-5">Каналы</h3>
+                            <div class="col-md-10 mt-3">
                                 <div class=" row mt-3">
                                     <div class=" mr-2">
-                                        <span class=" card d-inline-block px-2 py-1 text-muted">Telegram -
-                                            wsclub_bot</span>
+                                        <a href="">
+                                            <div
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">
+                                                Telegram -
+                                                wsclub_bot</div>
+                                        </a>
                                     </div>
                                     <div class=" mr-2">
-                                        <span class=" card d-inline-block px-2 py-1 text-muted">WhatsApp -
-                                            79253728211</span>
+                                        <a href="">
+                                            <div
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">
+                                                WhatsApp -
+                                                79253728211</div>
+                                        </a>
 
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row mt-4">
-                                <label for="newpassword" class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
                                     канал</label>
                                 <div class="col-md-6 col-xl-6   d-flex flex-wrap">
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">Telegram</span>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_1">
+                                            VK
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_1" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">VK
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">VK</span>
+                                    </div>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_2">
+                                            Telegram
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_2" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Telegram
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">Facebook</span>
+                                    </div>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_3">
+                                            Facebook
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_3" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Facebook
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">Viber</span>
+                                    </div>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_4">
+                                            Viber
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_4" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Viber
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">OK</span>
+                                    </div>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_5">
+                                            OK
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_5" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">OK
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">WhatsApp
-                                                Business</span>
+                                    </div>
+                                    <div class="mr-1 my-1">
+                                        <button type="button"
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                            data-toggle="modal" data-target="#channel_6">
+                                            WhatsApp Business
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="channel_6" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">WhatsApp
+                                                            Business
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Добавить канал?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Выйти</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-5">
-                            <h3>Участники</h3>
-                            <div class="form-group row mt-1 mb-4">
-                                <label for="newpassword" class="col-md-4 col-xl-3 mt-2 col-form-label text-secondary">Добавить
-                                    участников</label>
-                                <div class=" col-md-6 col-xl-4 mt-2">
-                                    <input type="password" class="form-control " id="newpassword"/>
-                                </div>
-                                <div class=" col-4 col-md-3 col-xl-2 mt-2">
-                                    <button class="btn btn-primary w-100 ">Пригласить</button>
-                                </div>
-                            </div>
-                            <div class=" row text-muted col-9">
-                                <div class="">
-                                    Василий пупкин
-                                </div>
-                                <span class="mx-3">-</span>
-                                <div class="">
-                                    vpfds@gmail.com
-                                </div>
-                                <span class="mx-3">-</span>
-                                <div class="">
-                                    редактор
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-5">
-                            <h3>Интеграции</h3>
-                            <div class="col-md-9 mt-3">
-                                <div class=" row">
-                                    <div class=" mr-2">
-                                        <span class=" card d-inline-block px-2 py-1">Miro - 123asdj<a
-                                                class="btn btn-link d-inline pt-0  text-primary">Обновить</a></span>
+                            <h3 class="mb-5">Участники</h3>
+
+                            <div class="mt-3 col-12 ">
+                                <div class="row">
+                                    <div class=" mb-3 row text-muted col-12 col-lg-9 col-12">
+                                        <p class="">
+                                            Василий пупкин<span class="mx-2">-</span>vpfds@gmail.com<span
+                                                class="mx-2">-</span>
+                                        <div class="dropdown">
+                                            <button class="mx-0 px-0 p-0 mt-0 mb-2 btn btn-link dropdown-toggle"
+                                                type="button" id="dropdownMenu2" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Редактор
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">Вариант 1</button>
+                                                <button class="dropdown-item" type="button">Редактор</button>
+                                                <button class="dropdown-item" type="button">Вариант 2</button>
+                                            </div>
+                                        </div>
+
+                                        </p>
 
                                     </div>
 
+                                    <div class=" mb-3 row text-muted col-12 col-lg-9 col-12">
+                                        <p class="">
+                                            Василий пупкин<span class="mx-2">-</span>vpfds@gmail.com<span
+                                                class="mx-2">-</span>
+                                        <div class="dropdown">
+                                            <button class="mx-0 px-0 p-0 mt-0 mb-2 btn btn-link dropdown-toggle"
+                                                type="button" id="dropdownMenu2" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Редактор
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">Вариант 1</button>
+                                                <button class="dropdown-item" type="button">Редактор</button>
+                                                <button class="dropdown-item" type="button">Вариант 2</button>
+                                            </div>
+                                        </div>
+
+                                        </p>
+
+                                    </div>
+                                    <div class=" mb-3 row text-muted col-12 col-lg-9 col-12">
+                                        <p class="">
+                                            Василий пупкин<span class="mx-2">-</span>vpfds@gmail.com<span
+                                                class="mx-2">-</span>
+                                        <div class="dropdown">
+                                            <button class="mx-0 px-0 p-0 mt-0 mb-2 btn btn-link dropdown-toggle"
+                                                type="button" id="dropdownMenu2" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Редактор
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">Вариант 1</button>
+                                                <button class="dropdown-item" type="button">Редактор</button>
+                                                <button class="dropdown-item" type="button">Вариант 2</button>
+                                            </div>
+                                        </div>
+
+                                        </p>
+
+                                    </div>
+                                    <div class=" mb-3 row text-muted col-12 col-lg-9 col-12">
+                                        <p class="">
+                                            Василий пупкин<span class="mx-2">-</span>vpfds@gmail.com<span
+                                                class="mx-2">-</span>
+                                        <div class="dropdown">
+                                            <button class="mx-0 px-0 p-0 mt-0 mb-2 btn btn-link dropdown-toggle"
+                                                type="button" id="dropdownMenu2" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Редактор
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">Вариант 1</button>
+                                                <button class="dropdown-item" type="button">Редактор</button>
+                                                <button class="dropdown-item" type="button">Вариант 2</button>
+                                            </div>
+                                        </div>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row ">
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 mt-2 col-form-label text-secondary">Добавить
+                                    участников</label>
+                                <div class=" col-md-6 col-xl-4 mt-2">
+                                    <input type="password" class="form-control " id="newpassword" />
+                                </div>
+                                <div class=" col-6 col-sm-4 col-md-3 col-xl-2 mt-2">
+                                    <button class="btn btn-primary w-100 ">Пригласить</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <h3 class="mb-5">Интеграции</h3>
+                            <div class="col-sm-12 col-md-9  mt-3">
+                                <div class=" row">
+                                    <div class=" mr-2 mb-2">
+                                        <span
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">Miro
+                                            - 123asdj<a
+                                                class="btn btn-link d-inline pt-0 font-weight-bold">Обновить</a></span>
+
+                                    </div>
+                                    <div class=" mr-2 mb-2">
+                                        <span
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">Miro
+                                            - 123asdj<a
+                                                class="btn btn-link d-inline pt-0 font-weight-bold">Обновить</a></span>
+
+                                    </div>
+                                    <div class=" mr-2 mb-1">
+                                        <span
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">Miro
+                                            - 123asdj<a
+                                                class="btn btn-link d-inline pt-0 font-weight-bold">Обновить</a></span>
+
+                                    </div>
+                                    <div class=" mr-2 mb-2">
+                                        <span
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">Miro
+                                            - 123asdj<a
+                                                class="btn btn-link d-inline pt-0 font-weight-bold">Обновить</a></span>
+
+                                    </div>
+                                    <div class=" mr-2 mb-2">
+                                        <span
+                                            class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white">Miro
+                                            - 123asdj<a
+                                                class="btn btn-link d-inline pt-0 font-weight-bold">Обновить</a></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row mt-4">
-                                <label for="newpassword" class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
+
+
+                            <div class="form-group row mt-2">
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
                                     интеграцию</label>
                                 <div class="col-md-6  ml-3 d-flex flex-wrap">
-                                        <div class="mr-1 my-1">
-                                            <span
-                                                class="card d-inline-block px-2 py-1 text-muted">TelegrGoogleSpreadsheetsORMam</span>
+                                    <div class="row">
+                                        <div class="mr-1 my-1 ">
+                                            <button type="button"
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                                data-toggle="modal" data-target="#integration_1">
+                                                GoogleSpreadsheetsORM
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="integration_1" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title text-dark"
+                                                                id="exampleModalLongTitle">GoogleSpreadsheetsORM
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Вы уверены что хотите сохранить?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Выйти</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary">Cохранить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span
-                                                class="card d-inline-block px-2 py-1 text-muted">OauthFileStorage</span>
+                                            <button type="button"
+                                                class=" badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn "
+                                                data-toggle="modal" data-target="#integration_2">
+                                                OauthFileStorage
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="integration_2" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Вы уверены что хотите сохранить?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Выйти</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">Яндекс.Касса</span>
+                                            <button type="button"
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn "
+                                                data-toggle="modal" data-target="#integration_3">
+                                                Яндекс.Касса
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="integration_3" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                Яндекс.Касса
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Вы уверены что хотите сохранить?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Выйти</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mr-1 my-1">
+                                            <button type="button"
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                                data-toggle="modal" data-target="#integration_4">
+                                                Robokassa
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="integration_4" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Robokassa
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Вы уверены что хотите сохранить?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Выйти</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">Robokassa</span>
+                                            <button type="button"
+                                                class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn"
+                                                data-toggle="modal" data-target="#integration_5">
+                                                CloudPayments
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="integration_5" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                CloudPayments
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Вы уверены что хотите сохранить?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Выйти</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">CloudPayments</span>
-                                        </div>
-                                        <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">WhatsApp
-                                                Business</span>
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-5">
-                            <h3>Переменные проекты</h3>
+                            <h3 class="mb-5">Переменные проекты</h3>
+
+                            <div class=" mb-2 mt-3 col d-flex flex-wrap col-12 col-md-9">
+                                <div class="row">
+                                    <span class="badge badge-secondary text-white  mr-1 my-1 px-2 py-2 text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a>
+                                    </span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2 text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a></span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2  text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a></span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2  text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a></span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2  text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a></span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2  text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a></span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2 text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a>
+                                    </span>
+                                    <span
+                                        class="badge badge-secondary text-white d-inline-block mr-1 my-1 px-2 py-2 text-white">Miro
+                                        - 123asdj<a class="btn btn-link d-inline pt-0 font-weight-bold"><i
+                                                class="fas fa-times ml-3 "></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
                             <div class="form-group row mt-3">
-                                <label for="newpassword" class="col-md-4 col-xl-3 col-form-label text-secondary">Переменная 1</label>
+                                <button class="btn ml-1"><i class="fas fa-edit"></i> Добавить поле</button>
+                            </div>
+
+                            <div class="form-group row mt-3">
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 col-form-label text-secondary">Переменная 1</label>
                                 <div class="col-md-6">
-                                    <input type="password" class="form-control" id="newpassword"/>
+                                    <input type="password" class="form-control" id="newpassword" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="newpassword" class="col-md-4 col-xl-3 col-form-label text-secondary">Переменная 2</label>
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 col-form-label text-secondary">Переменная 2</label>
                                 <div class="col-md-6">
-                                    <input type="password" class="form-control" id="newpassword"/>
+                                    <input type="password" class="form-control" id="newpassword" />
                                 </div>
                             </div>
                             <div class="form-group row mt-4">
-                                <label for="newpassword" class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
+                                <label for="newpassword"
+                                    class="col-md-4 col-xl-3 col-form-label text-secondary">Добавить
                                     поле</label>
                                 <div class="col-md-6  ml-3">
                                     <div class="row">
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">текст</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">текст</span></a>
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">да/нет</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">да/нет</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">json</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">json</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">число</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">число</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">дата</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">дата</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">связь</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">связь</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">фалй</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">файл</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">картинка</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">картинка</span></a>
+
                                         </div>
                                         <div class="mr-1 my-1">
-                                            <span class="card d-inline-block px-2 py-1 text-muted">аудио</span>
+                                            <a href=""><span
+                                                    class="badge badge-secondary text-white d-inline-block px-2 py-2 text-white btn">аудио</span></a>
+
                                         </div>
 
                                     </div>
@@ -280,6 +878,16 @@
         </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
