@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div style="height: 100vh;"
+            <div style="height: initial;position: sticky left: 0;"
                 class="col-md-2 col-xl-1 d-none d-md-block bg-light sidebar  border border-top-0 border-bottom-0 border-left-0 border-muted border-right-1">
                 <div class="card-collumns col-1 pl-xl-0 ml-xl-0 bg-light">
 
@@ -89,124 +89,196 @@
                         <li class="breadcrumb-item active" aria-current="page">Проект</li>
                     </ol>
                 </div>
-                <div class="col-12 pl-5 ml-5 pr-5 pt-5">
-                    <form>
-                        <div>
+                <div class="col-md-10 col-xl-10pl-5  pr-5 pt-5">
+                    <form class="pl-md-5">
+                        <div class="mb-5">
                             <h3>Информация</h3>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
+                            <div class="form-group row mt-3">
+                                <label for="newpassword" class="col-sm-3 col-md-4 col-form-label text-secondary">Новый
                                     пароль</label>
-                                <div class="col-sm-6">
+                                <div class=" col-md-6">
                                     <input type="password" class="form-control" id="newpassword">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
+                                <label for="newpassword" class="col-sm-3 col-md-4 col-form-label text-secondary">Новый
                                     пароль</label>
-                                <div class="col-sm-6">
+                                <div class=" col-md-6">
                                     <input type="password" class="form-control" id="newpassword">
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="mb-5">
                             <h3>Каналы</h3>
-                            <div class="col-9">
-                                <div class=" row">
+                            <div class="col-md-9">
+                                <div class=" row mt-3">
                                     <div class=" mr-2">
-                                        <span class="btn btn-outline-secondary py-1">Telegram - wsclub_bot</span>
+                                        <span class=" card d-inline-block px-2 py-1 text-muted">Telegram -
+                                            wsclub_bot</span>
                                     </div>
                                     <div class=" mr-2">
-                                        <span class="btn btn-outline-secondary py-1">WhatsApp - 79253728211</span>
+                                        <span class=" card d-inline-block px-2 py-1 text-muted">WhatsApp -
+                                            79253728211</span>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row mt-4">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Добавить
+                                <label for="newpassword" class="col-md-3 col-form-label text-secondary">Добавить
                                     канал</label>
-                                <div class="col-sm-5  ml-3">
+                                <div class="col-md-5  ml-3">
                                     <div class="row">
-                                        <div class="mx-auto">
-                                            <span class="btn btn-outline-secondary py-1">Telegram</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">Telegram</span>
                                         </div>
-                                        <div class="mx-auto ">
-                                            <span class="btn btn-outline-secondary py-1">VK</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">VK</span>
                                         </div>
-                                        <div class="mx-auto ">
-                                            <span class="btn btn-outline-secondary py-1">Facebook</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">Facebook</span>
                                         </div>
-                                        <div class="mx-auto ">
-                                            <span class="btn btn-outline-secondary py-1">Viber</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">Viber</span>
                                         </div>
-                                        <div class="mx-auto">
-                                            <span class="btn btn-outline-secondary py-1">OK</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">OK</span>
                                         </div>
-                                        <div class="mx-auto">
-                                            <span class="btn btn-outline-secondary py-1">WhatsApp Business</span>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">WhatsApp
+                                                Business</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="mb-5">
                             <h3>Участники</h3>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Добавить
+                            <div class="form-group row mt-1">
+                                <label for="newpassword" class="col-md-3 mt-2 col-form-label text-secondary">Добавить
                                     участников</label>
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 mt-2">
                                     <input type="password" class="form-control " id="newpassword">
                                 </div>
-                                <div class="col-2 ">
-                                    <button class="btn btn-primary w-100">Пригласить</button>
+                                <div class="col-2 mt-2">
+                                    <button class="btn btn-primary ">Пригласить</button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class="col-sm-6">
-                                    <input type="password" class="form-control" id="newpassword">
+                            <div class=" row text-muted col-9">
+                                <div class="">
+                                    Василий пупкин
+                                </div>
+                                <span class="mx-3">-</span>
+                                <div class="">
+                                    vpfds@gmail.com
+                                </div>
+                                <span class="mx-3">-</span>
+                                <div class="">
+                                    редактор
                                 </div>
                             </div>
                         </div>
 
-                        <div>
+                        <div class="mb-5">
                             <h3>Интеграции</h3>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class="col-sm-6">
-                                    <input type="password" class="form-control" id="newpassword">
+                            <div class="col-md-9 mt-3">
+                                <div class=" row">
+                                    <div class=" mr-2">
+                                        <span class=" card d-inline-block px-2 py-1">Miro - 123asdj<a
+                                                class="btn btn-link d-inline pt-0  text-primary">Обновить</a></span>
+
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class="col-sm-6">
-                                    <input type="password" class="form-control" id="newpassword">
+                            <div class="form-group row mt-4">
+                                <label for="newpassword" class="col-md-3 col-form-label text-secondary">Добавить
+                                    интеграцию</label>
+                                <div class="col-md-6  ml-3">
+                                    <div class="row">
+                                        <div class="mr-1 my-1">
+                                            <span
+                                                class="card d-inline-block px-2 py-1 text-muted">TelegrGoogleSpreadsheetsORMam</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span
+                                                class="card d-inline-block px-2 py-1 text-muted">OauthFileStorage</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">Яндекс.Касса</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">Robokassa</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">CloudPayments</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">WhatsApp
+                                                Business</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div>
+                        <div class="mb-5">
                             <h3>Переменные проекты</h3>
-                            <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class="col-sm-6">
+                            <div class="form-group row mt-3">
+                                <label for="newpassword" class="col-md-3 col-form-label text-secondary">Переменная 1</label>
+                                <div class="col-md-6">
                                     <input type="password" class="form-control" id="newpassword">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый
-                                    пароль</label>
-                                <div class="col-sm-6">
+                                <label for="newpassword" class="col-md-3 col-form-label text-secondary">Переменная 2</label>
+                                <div class="col-md-6">
                                     <input type="password" class="form-control" id="newpassword">
                                 </div>
+                            </div>
+                            <div class="form-group row mt-4">
+                                <label for="newpassword" class="col-md-3 col-form-label text-secondary">Добавить
+                                    поле</label>
+                                <div class="col-md-6  ml-3">
+                                    <div class="row">
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">текст</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">да/нет</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">json</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">число</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">дата</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">связь</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">фалй</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">картинка</span>
+                                        </div>
+                                        <div class="mr-1 my-1">
+                                            <span class="card d-inline-block px-2 py-1 text-muted">аудио</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-5">
+                            <div class="col-6  col-lg-2 ">
+                                <button type="submit" class="btn btn-primary  w-100">Сохранить</button>
                             </div>
                         </div>
 
                     </form>
-                    <div class="row">2</div>
-                    <div class="row">3</div>
                 </div>
             </div>
         </div>
