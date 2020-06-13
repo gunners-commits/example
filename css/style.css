@@ -1,5 +1,4 @@
 @import url('../assets/fonts/Ubuntu-Medium.ttf');
-/* @import url('../assets/fonts/PressStart2P-Regular.ttf'); */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *{
@@ -18,30 +17,10 @@ body{
     font-family: 'Press Start 2P', cursive;
 }
 
-a:hover{
-    text-decoration: none !important;
-}
-
-.form input{
-    color: black !important;
-}
-
-.logo-block a{
-    color: black !important;
-    text-decoration: none !important;
-}
-
-main{
-    margin-top: 10%;
-}
-
-.restore{
-    font-size: 12px !important;
-}
 
 
-@media (max-width:768px){
+/* @media (max-width:768px){
     main{
         margin-top: 35%;
     }
-}
+} */
