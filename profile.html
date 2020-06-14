@@ -7,7 +7,7 @@
     <title>BotBand</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0cbc9e8cc5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,26 +17,34 @@
             <img src="./assets/img/logo.png" alt="">
             <h1 class="logo h5 ml-3 mt-3">BotBand</h1>
         </a>
+
     </div>
 
     <div class="col-12 col-xl-9 mx-0 mx-xl-auto mt-5">
-        <div class="col-12 col-lg-4 mb-4">
+        <div class="col-12  col-lg-5 col-xl-4 mb-4">
             <div class="row  ">
-                <img class="rounded-circle img-thumbnail" src="./assets/img/avatar.png" alt="Аватарка"
-                    style="width: 90px; height: 90px;  object-fit: contain; object-position: center;">
+                <div class="posiion:relative " style="width: 90px; overflow: hidden;">
+                    <img class="rounded-circle img-thumbnail" src="./assets/img/avatar.png" alt="Аватарка"
+                        style="width: 90px; height: 90px;  object-fit: contain; object-position: center;">
+                    <a href=""><i class="fas fa-upload text-white"
+                            style=" position: absolute; left:37px !important;top: 40%;"></i></a>
+                            
+                </div>
                 <div class="ml-3 d-flex justify-content-center flex-column">
-                    <h4 class="h5  mb-1">Василий Пупкин</h4>
+                    <h4 class="h5 position-relative mb-1">Василий Пупкин
+                        <a href=""><i class="h5 fas fa-edit text-black-50"
+                            style=" position: absolute; right: -50px !important; top: 0px; "></i></a>
+                    </h4>
                     <span class="font-weight-bold ">@vpupkin</span>
                 </div>
             </div>
-
-
         </div>
 
-        <div >
+        <div>
 
             <form>
-                <h4 class="h6 font-weight-bold mb-4">Контакты</h4>
+
+                <h4 class="h6 font-weight-bold mb-4 mt-5">Контакты</h4>
                 <div class="form-group row ">
                     <label for="inputEmail3" class="col-sm-3 col-form-label text-secondary">Email</label>
                     <div class="col-sm-6">
@@ -56,43 +64,172 @@
                     </div>
                 </div>
 
-                <h4 class="h6 font-weight-bold mb-4">Локаль</h4>
+
+                <div class="col-9 mb-2">
+                    <div class="btn-group d-flex row justify-content-between align-items-start">
+                        <h4 class="h6 font-weight-bold mb-4">Локаль</h4>
+                        <button type="button" class="py-0 col-3 btn text-dark dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Выберите Язык
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg width="25" class="mr-1" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                    xml:space="preserve">
+                                    <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" />
+                                    <path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923
+                            C5.633,194.69,0,224.686,0,256s5.633,61.31,15.923,89.043L256,367.304L496.077,345.043z" />
+                                    <path style="fill:#D80027;"
+                                        d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z" />
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                                Русский</button>
+                            <button class="dropdown-item" type="button">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg width="25" class="mr-1" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                    xml:space="preserve">
+                                    <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" />
+                                    <g>
+                                        <path style="fill:#D80027;"
+                                            d="M244.87,256H512c0-23.106-3.08-45.49-8.819-66.783H244.87V256z" />
+                                        <path style="fill:#D80027;"
+                                            d="M244.87,122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783H244.87V122.435z" />
+                                        <path style="fill:#D80027;"
+                                            d="M256,512c60.249,0,115.626-20.824,159.356-55.652H96.644C140.374,491.176,195.751,512,256,512z" />
+                                        <path style="fill:#D80027;" d="M37.574,389.565h436.852c12.581-20.529,22.338-42.969,28.755-66.783H8.819
+                                C15.236,346.596,24.993,369.036,37.574,389.565z" />
+                                    </g>
+                                    <path style="fill:#0052B4;" d="M118.584,39.978h23.329l-21.7,15.765l8.289,25.509l-21.699-15.765L85.104,81.252l7.16-22.037
+                            C73.158,75.13,56.412,93.776,42.612,114.552h7.475l-13.813,10.035c-2.152,3.59-4.216,7.237-6.194,10.938l6.596,20.301l-12.306-8.941
+                            c-3.059,6.481-5.857,13.108-8.372,19.873l7.267,22.368h26.822l-21.7,15.765l8.289,25.509l-21.699-15.765l-12.998,9.444
+                            C0.678,234.537,0,245.189,0,256h256c0-141.384,0-158.052,0-256C205.428,0,158.285,14.67,118.584,39.978z M128.502,230.4
+                            l-21.699-15.765L85.104,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822l-21.7,15.765L128.502,230.4z
+                             M120.213,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822
+                            L120.213,130.317z M220.328,230.4l-21.699-15.765L176.93,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822
+                            l-21.7,15.765L220.328,230.4z M212.039,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822
+                            l8.288-25.509l8.288,25.509h26.822L212.039,130.317z M212.039,55.743l8.289,25.509l-21.699-15.765L176.93,81.252l8.289-25.509
+                            l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822L212.039,55.743z" />
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                                Английский</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="form-group row  mb-5 ">
-                    <label for="language" class=" col-lg-1 col-sm-1 col-form-label text-secondary">Язык</label>
-                    <div class="col-sm-3 col-lg-2">
+                    <label for="language" class=" my-1 col-lg-1 col-sm-1 col-form-label text-secondary">Язык</label>
+                    <div class="col-sm-3 col-lg-3 my-1">
                         <input type="text" class="form-control" id="language">
                     </div>
-                    <label for="TimeZone"
-                        class=" offset-lg-0  col-sm-2  justify-content-end col-lg-1 col-form-label text-secondary ">TimeZone</label>
-                    <div class="col-sm-3 col-lg-2">
-                        <input type="text" class="form-control" id="TimeZone">
+                    <button class="btn btn-secondary dropdown-toggle my-1 ml-3" type="button" id="hours"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Часовой пояс
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="hours">
+                        <a class="dropdown-item" href="#">Лондон</a>
+                        <a class="dropdown-item active" href="#">Москва</a>
+                        <a class="dropdown-item" href="#">Париж</a>
                     </div>
                 </div>
-
-                <h4 class="h6 font-weight-bold mb-4">Изменение пароля</h4>
-                <div class="form-group row">
-                    <label for="newpassword" class="col-sm-3 col-form-label text-secondary">Новый пароль</label>
-                    <div class="col-sm-6">
-                        <input type="password" class="form-control" id="newpassword">
-                    </div>
-                </div>
-                <div class="form-group row mb-2">
-                    <label for="checkpas" class="col-sm-3 col-form-label text-secondary ">Повторите новый
-                        пароль</label>
-                    <div class="col-sm-6">
-                        <input type="password" class="form-control" id="checkpas">
-                    </div>
-                </div>
-
-                <div class="form-group row mt-5">
-                    <div class="col-6  col-lg-2 ">
-                        <button type="submit" class="btn btn-primary  w-100">Сохранить</button>
-                    </div>
-                </div>
-            </form>
         </div>
+
+        <h4 class="h6 font-weight-bold mb-4">Изменение пароля</h4>
+        <div class="form-group col-sm-9 col-12 col-xl-9 ">
+            <div class="row ">
+                <label for="newpassword" class="col-12 col-xl-2 col-form-label text-secondary px-0 px-md-auto">Новый пароль</label>
+                <div class="col-xl-3 px-0 px-md-auto">
+                    <input type="password" class="form-control" id="newpassword">
+                </div>
+                <label for="checkpas" class="col-12 col-xl-4  col-md-4 col-form-label text-secondary pl-xl-5 pl-md-3  pl-0 px-md-auto">Повторите новый
+                    пароль</label>
+                <div class="col-xl-3 px-0 px-md-auto">
+                    <input type="password" class="form-control" id="checkpas">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row mt-5">
+            <div class="col-6  col-lg-2 ">
+                <button type="submit" class="btn btn-primary  w-100">Сохранить</button>
+            </div>
+        </div>
+        </form>
     </div>
-    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
