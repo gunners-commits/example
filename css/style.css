@@ -29,3 +29,69 @@ body{
     background-color: #3284FF;
 }
 
+.cardLink i{
+    display: none;
+}
+.cardLink:hover i {
+    display: block;
+}
+
+.setting_block:not(:first-child){
+    margin-top: 150px !important;
+}
+
+.block_fixed{
+    height: 100vh !important; position: fixed !important;  
+}
+
+.project_set-sticky{
+    position: sticky; top: 0; z-index: 10;
+}
+
+.position-fixed{
+    z-index: 10 !important;
+}
+
+.position-unset{
+    position: unset !important;
+}
+
+.main_block-height{
+    height: 100vh;
+}
+
+.nav_height{
+    height: 50px;
+}
+
+.opac-6{
+    opacity: .6;
+}
+
+.chat-list{
+    min-width: 65px;
+}
+
+.chat_info-time{
+    right: 0; bottom: 18px;
+}
+
+.chat-list a{
+    text-decoration: none !important;
+}
+
+.chat_avatar-lg{
+    width: 125px; object-fit: cover; height: 125px;
+}
+
+.chat_message-text{
+    background: #F6F6F6 !important; width: max-content  !important;
+}
+
+.chat_message-img{
+    width: 250px !important; background: #F6F6F6 !important; width: max-content  !important;
+}
+
+.message-page{
+    margin-bottom: 120px !important; 
+}
