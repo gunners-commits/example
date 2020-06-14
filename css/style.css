@@ -9,8 +9,8 @@
 
 body{
     font-family: 'Ubuntu' , sans-serif !important;
-    min-width: 350px;
-    max-width: 1920px;
+    min-width: 350px !important;
+    max-width: 1920px !important;
 }
 
 .logo{
