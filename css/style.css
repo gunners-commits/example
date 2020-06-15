@@ -37,7 +37,7 @@ body{
 }
 
 .setting_block:not(:first-child){
-    margin-top: 150px !important;
+    margin-top: 105px !important;
 }
 
 .block_fixed{
@@ -66,6 +66,14 @@ body{
 
 .nav_height{
     height: 50px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.nav_height > div{
+    z-index: 30 !important;
 }
 
 .opac-6{
@@ -98,4 +106,22 @@ body{
 
 .message-page{
     margin-bottom: 120px !important; 
+}
+
+.crossChannel{
+    display: none;
+    top: 2px;
+    right: 6px;
+}
+
+.channel-item:hover > .crossChannel, .Integration-item:hover > .crossChannel {
+    display: block !important;
+}
+
+.fa-sync-alt{
+    font-size: 12px;
+}
+
+.nav_item:hover{
+    color: black !important;
 }

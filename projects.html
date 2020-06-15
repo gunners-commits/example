@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <div class="container-fluid navbar navbar-white ">
-        <a href="./index.html" class="navbar-brand text-dark d-flex align-items-center">
-            <img src="./assets/img/logo.png" alt=""/>
-            <h1 class="logo h5 ml-3 mt-3">BotBand</h1>
+    <div class="container-fluid navbar navbar-white pt-1 ">
+        <a href="./index.html" class="navbar-brand text-dark d-flex ">
+            <img src="./assets/img/logo.png" alt="" />
+            <h1 class="logo h5 ml-3 mt-2">BotBand</h1>
         </a>
-        <a style="text-decoration:none" href="./profile.html"
-            class="mt-3 h6 d-flex flex-grow-0 align-items-center nav-item text-dark navbar-text">
+        <a style="text-decoration:none " href="./profile.html"
+            class="pt-2 h6 d-flex flex-grow-0 align-items-center nav-item text-dark navbar-text">
             <div style="width:35px !important ; height: 35px !important ; " class="rounded-circle mr-3">
-                <img src="./assets/img/avatar.png" alt="" class="w-100 h-100 "/>
+                <img src="./assets/img/avatar.png" alt="" class="w-100 h-100 " />
             </div>
             <p class="mb-0 d-none d-md-block mr-5">Василий Пупкин </p>
         </a>
@@ -35,51 +35,52 @@
         <div class="container ">
             <div class="row  align-items-stretch">
                 <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3 mt-3 bg-link" style="height: 200px;">
-                    <a onclick="return false" href="" class="text-light h-100 cardLink">
+                    <a href="" class="text-light h-100 cardLink" data-toggle="modal" data-target="#exampleModal1">
                         <div class="card rounded-lg shadow-sm h-100 bg-primary border-light  ">
 
                             <div class="card-body h-100 ">
                                 <div class="card-title d-flex justify-content-center h-100">
 
-                                    <p type="button" class="text-white bg-primary  h6 align-self-center" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" >+ добавить новый</p>
-                                        
-                                    <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Добавить проект</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="input-group ">
-                                                    
-                                                    <p >Введите название проекта:</p>
-                                                    <div class="w-100">
-                                                        <input type="text" class="form-control w-100" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Отмена</button>
-                                                <button type="button" class="btn btn-primary">Сохранить</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>   
+                                    <p class="text-white bg-primary  h6 align-self-center point" type="button"
+                                        class="btn btn-primary">+ добавить новый</p>
+
+
                                 </div>
-                                
+
                             </div>
 
-        
-                            
-                        </div>
-                                
-                    </a>
 
+
+                        </div>
+
+                    </a>
+                    <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Добавить проект</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group ">
+
+                                        <p>Введите название проекта:</p>
+                                        <div class="w-100">
+                                            <input type="text" class="form-control w-100" aria-label="Large"
+                                                aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                    <button type="button" class="btn btn-primary">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3 mt-3 cardLink" style="height: 200px;">
                     <a href="" class="text-dark">
@@ -88,37 +89,14 @@
                             <div class="card-body">
                                 <h4 class="card-title h5">Марафон “Сила Воли”</h4>
                             </div>
-                            
+
                         </div>
-                        </a>
-                        <i style="top: 5px; right: 20px;" class=" far fa-times-circle position-absolute " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></i>
-        
-                            <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Хотите удалить проект?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="input-group">
-                                                
-                                                  <p class="">Для того, чтобы подтвердить удаление проекта <span class="font-weight-bold">Марафон “Сила Воли”</span>, введите название проекта</p>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                              </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn btn-danger">Удалить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
+                    </a>
+                    <i style="top: 5px; right: 20px;" class=" fas fa-times position-absolute " type="button"
+                        data-toggle="modal" data-target="#deleteProject" data-whatever="Марафон “Сила Воли”"></i>
+
+
+
                 </div>
                 <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3 mt-3 cardLink" style="height: 200px;">
                     <a href="" class="text-dark">
@@ -127,75 +105,29 @@
                             <div class="card-body">
                                 <h4 class="card-title h5">Avon</h4>
                             </div>
-        
-                            
+
+
                         </div>
                     </a>
-                    <i style="top: 5px; right: 20px;" class=" far fa-times-circle position-absolute " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></i>
-        
-                            <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Хотите удалить проект?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="input-group">
-                                                
-                                                  <p class="">Для того, чтобы подтвердить удаление проекта <span class="font-weight-bold">Марафон “Сила Воли”</span>, введите название проекта</p>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                              </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn btn-danger">Удалить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <i style="top: 5px; right: 20px;" class=" fas fa-times position-absolute " type="button"
+                        data-toggle="modal" data-target="#deleteProject" data-whatever="Avon"></i>
+
                 </div>
-                <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3  mt-3 position-relative cardLink" style="height: 200px;">
+                <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3  mt-3 position-relative cardLink"
+                    style="height: 200px;">
                     <a href="./project.html" class="text-dark">
                         <div class="card shadow-sm h-100 rounded-lg">
 
                             <div class="card-body">
                                 <h4 class="card-title h5">Women Strategy Club</h4>
                             </div>
-                            
+
                         </div>
                     </a>
-                    <i style="top: 5px; right: 20px;" class=" far fa-times-circle position-absolute " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></i>
-                    
-                            <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Хотите удалить проект?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="input-group">
-                                                
-                                                  <p class="">Для того, чтобы подтвердить удаление проекта <span class="font-weight-bold">Марафон “Сила Воли”</span>, введите название проекта</p>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                              </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn btn-danger">Удалить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <i style="top: 5px; right: 20px;" class=" fas fa-times position-absolute " type="button"
+                        data-toggle="modal" data-target="#deleteProject" data-whatever="Women Strategy Club"></i>
+
+
                 </div>
                 <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3  mt-3 cardLink " style="height: 200px;">
                     <a href="" class="text-dark">
@@ -204,36 +136,13 @@
                             <div class="card-body">
                                 <h4 class="card-title h5">AiLoveBot</h4>
                             </div>
-                            
+
                         </div>
                     </a>
-                    <i style="top: 5px; right: 20px;" class=" far fa-times-circle position-absolute " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></i>
-        
-                            <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Хотите удалить проект?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="input-group">
-                                                
-                                                  <p class="">Для того, чтобы подтвердить удаление проекта <span class="font-weight-bold">Марафон “Сила Воли”</span>, введите название проекта</p>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                              </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn btn-danger">Удалить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <i style="top: 5px; right: 20px;" class=" fas fa-times position-absolute " type="button"
+                        data-toggle="modal" data-target="#deleteProject" data-whatever="AiLoveBot"></i>
+
+
                 </div>
                 <div class="mx-auto mx-lg-0 col-12 col-md-6 col-lg-6 col-xl-3  mt-3 cardLink" style="height: 200px;">
                     <a href="" class="text-dark">
@@ -242,36 +151,13 @@
                             <div class="card-body">
                                 <h4 class="card-title h5">Институт Коучинга</h4>
                             </div>
-                            
+
                         </div>
                     </a>
-                    <i style="top: 5px; right: 20px;" class=" far fa-times-circle position-absolute " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></i>
-        
-                            <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Хотите удалить проект?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="input-group">
-                                                
-                                                  <p class="">Для того, чтобы подтвердить удаление проекта <span class="font-weight-bold">Марафон “Сила Воли”</span>, введите название проекта</p>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                              </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn btn-danger">Удалить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <i style="top: 5px; right: 20px;" class=" fas fa-times position-absolute " type="button"
+                        data-toggle="modal" data-target="#deleteProject" data-whatever="Институт Коучинга"></i>
+
+
                 </div>
 
             </div>
@@ -279,7 +165,34 @@
         </div>
         </aticle>
 
-        
+        <!-- modal -->
+        <div class="modal fade" id="deleteProject" tabindex="-1" role="dialog" aria-labelledby="titleProject" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titleProject">Хотите удалить проект?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <p class="">Для того, чтобы подтвердить удаление проекта <span
+                                    class="font-weight-bold name_project"></span>, введите название
+                                проекта</p>
+                            <input type="text" class="form-control" aria-label="Large"
+                                aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                        <button type="button" class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
@@ -289,6 +202,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
