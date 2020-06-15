@@ -29,6 +29,18 @@ body{
     background-color: #3284FF;
 }
 
+.avatar_icon-mob::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    background-color: #3284FF;
+}
+
 .cardLink i{
     display: none;
 }
@@ -65,7 +77,11 @@ body{
 }
 
 .nav_height{
-    height: 50px;
+    height: 5% !important; 
+}
+
+.page_chat-height{
+    height: 95% !important;
 }
 
 a{
@@ -80,12 +96,16 @@ a{
     opacity: .6;
 }
 
+.chat_name{
+    min-width: 130px;
+}
+
 .chat-list{
-    min-width: 65px;
+    min-width: 85px;
 }
 
 .chat_info-time{
-    right: 0; bottom: 18px;
+    right: 5px; bottom: 16px;
 }
 
 .chat-list a{
@@ -104,8 +124,21 @@ a{
     width: 250px !important; background: #F6F6F6 !important; width: max-content  !important;
 }
 
-.message-page{
-    margin-bottom: 120px !important; 
+.overScroll{
+    overflow-y: scroll;
+}
+
+.overScroll::-webkit-scrollbar{
+    width: 3px !important;
+}
+
+.overScroll::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.overScroll::-webkit-scrollbar-thumb{
+    background-color: #AFAFAF;
+    border-radius: 8px;
 }
 
 .crossChannel{
@@ -114,8 +147,75 @@ a{
     right: 6px;
 }
 
+.chat_main{
+    height: 85% !important;
+    
+}
+
 .channel-item:hover > .crossChannel, .Integration-item:hover > .crossChannel {
     display: block !important;
+}
+
+.b-box{
+    box-sizing: border-box;
+}
+
+.overFlow{
+    overflow: hidden;
+}
+
+.navbar-collapse{
+    z-index: 20;
+}
+
+.chats_mobile{
+    position: absolute;
+    width: 30px !important;padding-left: 15px !important;
+    font-size: 50px ;
+    cursor: pointer;
+    left: 5px;
+    top: 0px;
+    z-index: 30;
+    transform: rotate(180deg);
+}
+
+.contact_active{
+    border-radius: 3px;
+    background-color: #EDEEF0;
+}
+
+.input_message{
+    background-color: #EDEEF0;
+    border-top: 1px solid #DEE2E6;
+    z-index: 20;
+    height: 15% !important;
+    bottom:0;
+    max-width: inherit;
+    width: 100%;
+}
+
+.sidebar_mobile-hide{
+    transition: left 1s ease;
+    position: absolute;
+    left:-200px;
+    display: block !important;
+    height: 400px !important;
+    z-index: 30;
+    min-width: 100px !important;
+    
+    border-radius: 4px;
+}
+
+.sidebar_mobile-seek{
+    transition: left 1s ease;
+    position: absolute;
+    left:10px;
+    display: block !important;
+    height: 400px !important;
+    z-index: 30;
+    min-width: 100px !important;
+    
+    border-radius: 4px;
 }
 
 .fa-sync-alt{

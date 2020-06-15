@@ -54,8 +54,20 @@ $('#modalField').on('show.bs.modal', function (event) {
 
 // $('#myModal').modal(options)
 
-deletedIcon.forEach(e=> {
-    e.addEventListener('click',(e)=>{
-        
-    });
+
+let btnMobChat = document.querySelector('.chats_mobile');
+let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive');
+let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon')
+
+
+navbarTogglerIcon.addEventListener('click', (e)=>{
+    chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
+    chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
 });
+
+btnMobChat.addEventListener('click', (e)=>{
+    chatsMobileAdaptive.classList.toggle('sidebar_mobile-seek')
+    chatsMobileAdaptive.classList.toggle('sidebar_mobile-hide')
+});
+
+console.dir(document.querySelector('.chat_main-text').clientHeight);

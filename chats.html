@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-1 px-0 ">
-                <div class="position-fixed h-100 d-none d-md-block col-1 h-100 px-0 mx-0 bg-light sidebar  border border-top-0 border-bottom-1 border-left-0 border-muted border-right-1">
+                <div class=" d-none h-100 d-none d-md-block col-12 h-100 px-0 mx-0 bg-light sidebar  border border-top-0 border-bottom-1 border-left-0 border-muted border-right-1">
                     <div class="card-collumns col-12 px-2 mb-0 pb-2 ml-0 position-unset">
 
                         <ul class="nav flex-column align-items-center ">
@@ -26,14 +26,7 @@
                             </li>
                             <li class="d-none d-md-block nav-item mb-3 w-50">
                                 <a href="" class="nav-link text-dark d-flex flex-column px-0  align-items-center">
-                                    <svg class="d-block" width="25" aria-hidden="true" focusable="false"
-                                        data-prefix="fas" data-icon="briefcase"
-                                        class="svg-inline--fa fa-briefcase fa-w-16" role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
-                                        </path>
-                                    </svg>
+                                    <img class="class="d-block"" src="./assets/svg/project.svg" alt="">
 
                                     <p class="my-0 mx-0 px-0 d-none d-lg-block">Проект</p>
                                 </a>
@@ -96,34 +89,38 @@
             <div  class="col-md-11 p-0 m-0 main_block-height">
                 <div class="nav_height">
                     <div 
-                    class="position-fixed w-100 ml-0 bg-white border border-top-0 border-bottom-1 border-left-0  border-top-0 border-muted border-right-0  align-items-start justify-content-between">
-                    <div class="col-12 navbar d-md-none d-flex py-0">
-                        <a href=" " class="navbar-brand d-flex align-items-center ">
+                    class="  w-100 ml-0 bg-white border border-top-0 border-bottom-1 border-left-0  border-top-0 border-muted border-right-0  align-items-start justify-content-between">
+                    <div class="col-12 navbar d-md-none d-flex  py-0 ">
+                        <i class="fas fa-angle-right chats_mobile col-1"></i>
+                        <a href=" " class="navbar-brand d-flex align-items-center justify-content-start col-6 ">
                             <img src="./assets/img/logo.png" alt=""/>
                             <h1 class="h5 logo ml-3 mb-0 pb-0 d-inline-block text-dark">BotBand</h1>
+                            
                         </a>
-                        <button class="px-0 py-0 mt-2 d-md-none navbar-toggler collapsed" type="button"
+                        <button class="justify-content-start px-0 py-0 mt-2 col-1 d-md-none navbar-toggler collapsed" type="button"
                             data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>
-                        <div class="navbar-collapse collapse hide" id="navbarsExample06">
-                            <ul class="navbar-nav mr-auto ">
+                        <div class="navbar-collapse  collapse hide" id="navbarsExample06">
+                            <ul class="navbar-nav bg-white mr-auto ">
                                 <li class="nav-item ">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                           <button class="btn  " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search mr-3" ></i></button>
                                           <div class="dropdown-menu p-4 w-100 " >
-                                          <a href=""><span class="badge badge-secondary py-2 px-3 my-1">Последнее сообщение</span></a>  
-                                            <a href=""><span class="badge badge-secondary py-2 px-3 my-1">содержит</span></a>
-                                            <a href=""><span class="badge badge-secondary py-2 px-3 my-1">вася</span></a>
+                                            <span class="badge badge-secondary py-2 px-3 my-1">Последнее сообщение</span>  
+                                            <span class="badge badge-secondary py-2 px-3 my-1">содержит</span>
+                                            <span class="badge badge-secondary py-2 px-3 my-1">вася</span>
+                                            <button type="button" class="d-block my-1 btn btn-warning">Сбросить фильтр</button>
                                             <div class="d-flex flex-column">
                                                 <a href="" class="text-muted">+ добавить условие</a>
-                                            <a href="" class="text-muted">+ добавить группу условий</a>
+                                                <a href="" class="text-muted">+ добавить группу условий</a>
                                             </div>
                                           </div>
                                         </div>
-                                        <input type="text" class="form-control col-3 align-self-center" aria-label="Text input with dropdown button">
+                                        <input type="text" class="form-control col-9 my-2 align-self-center" aria-label="Text input with dropdown button">
+                                        <button class="btn">Поиск</button>
                                       </div>
                                 </li>
                                 <li class="nav-item ">
@@ -177,22 +174,24 @@
                                 </li>
                             </ul>
                         </div>
+                        
                     </div>
                     <div class="d-flex d-none  d-md-flex align-items-center">
-                        <div aria-label="breadcrumb " class="col-9 col-md-4 pl-0 d-none  d-md-inline-block ">
+                        <div aria-label="breadcrumb " class="col-md-5 pl-0 d-none  d-md-inline-block ">
                             <ol class="breadcrumb bg-white pb-0 ">
                                 <li class="breadcrumb-item "><a href="#" class="text-dark">Women Strategy Club</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Проект</li>
+                                <li class="breadcrumb-item active" aria-current="page">Чаты</li>
                             </ol>
                         </div>
-                        <div class="col-4 align-items-center d-none d-md-block">
+                        <div class="col-md-3 align-items-center d-none d-md-block">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                   <button class="btn " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search mr-3" ></i></button>
                                   <div class="dropdown-menu p-4" >
-                                  <a href=""><span class="badge badge-secondary py-2 px-3 my-1">Последнее сообщение</span></a>  
-                                    <a href=""><span class="badge badge-secondary py-2 px-3 my-1">содержит</span></a>
-                                    <a href=""><span class="badge badge-secondary py-2 px-3 my-1">вася</span></a>
+                                        <span class="badge badge-secondary py-2 px-3 my-1">Последнее сообщение</span> 
+                                        <span class="badge badge-secondary py-2 px-3 my-1">содержит</span>
+                                        <span class="badge badge-secondary py-2 px-3 my-1">вася</span>
+                                    <button type="button" class="d-block my-1 btn btn-warning">Сбросить фильтр</button>
                                     <div class="d-flex flex-column">
                                         <a href="" class="text-muted">+ добавить условие</a>
                                     <a href="" class="text-muted">+ добавить группу условий</a>
@@ -209,284 +208,616 @@
 
                 </div>
                 </div>
-                <div class="col-12 pr-0 pl-0 pl-sm-auto position-relative" style="height: 94%;">
-                    <div class="d-flex h-100 pr-0 chat-list" >
-                        <div 
-                        class="chat-list h-100 ml-0 pl-1 pr-0 pt-0 col-1 col-xl-2 mr-0 mr-sm-1 mr-lg-3  mr-xl-5">
-                            <div 
-                            class="chat-list h-100 position-fixed h-100 ml-0 pl-1 pr-1 mr-0 pt-1 col-1 col-xl-2 border border-right-1 border-top-0 border-left-0 border-bottom-0 ">
+                <div class="col-12 pr-0 pl-0 pl-sm-auto position-relative page_chat-height" >
+                    <div class="d-block d-md-none  position-relative rounded">
+                        
 
+                       <div class="sidebar_mobile-hide chats-mobile-adaptive bg-white  b-box  ml-0 pl-1 pr-1 mr-0 overScroll " >
+                            
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                        <div class="avatar_icon position-relative" style="height:60px">
+                                            <img style="object-fit: cover; object-position: center;"
+                                                src="./assets/img/avatar.png" width="45px" height="45px"
+                                                class=" rounded-circle  " alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            
 
-                            <a class="text-dark" href="" >
-                                <div
-                                    class="rounded  mb-1 mt-1  col-12 border border-right-0 border-top-0 border-left-0 border-bottom-1">
-                                    <div class="row flex-nowrap overflow-hidden position-relative px-1 py-1">
+                            
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
                                         <div class="avatar_icon position-relative" style="height:60px">
                                             <img style="object-fit: cover; object-position: center;"
                                                 src="./assets/img/avatar.png" width="45px" height="45px"
                                                 class=" rounded-circle  " alt="" />
                                         </div>
-                                        <div class="ml-3 d-none d-lg-block">
-                                            <h3 class="h6 mb-0 ">Ксения Зайцева</h3>
-                                            <p>Вы: ок</p>
-                                            <span class="chat_info-time text-muted position-absolute "
-                                                >10:00</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </a>
+                            
 
-                            <a class="text-dark" href="" >
-                                <div
-                                    class="rounded  mb-1 mt-1  col-12 border border-right-0 border-top-0 border-left-0 border-bottom-1">
-                                    <div class="row flex-nowrap overflow-hidden position-relative px-1 py-1">
+                        
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
                                         <div class="avatar_icon position-relative" style="height:60px">
                                             <img style="object-fit: cover; object-position: center;"
                                                 src="./assets/img/avatar.png" width="45px" height="45px"
                                                 class=" rounded-circle  " alt="" />
                                         </div>
-                                        <div class="ml-3 d-none d-lg-block">
-                                            <h3 class="h6 mb-0 " >Ксения Зайцева</h3>
-                                            <p>Вы: ок</p>
-                                            <span class="chat_info-time text-muted position-absolute "
-                                                >10:00</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </a>
-
-                            <a class="text-dark" href="" >
-                                <div
-                                    class="rounded  mb-1 mt-1  col-12 border border-right-0 border-top-0 border-left-0 border-bottom-1">
-                                    <div class="row flex-nowrap overflow-hidden position-relative px-1 py-1">
+                           
+                            
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
                                         <div class="avatar_icon position-relative" style="height:60px">
                                             <img style="object-fit: cover; object-position: center;"
                                                 src="./assets/img/avatar.png" width="45px" height="45px"
                                                 class=" rounded-circle  " alt="" />
                                         </div>
-                                        <div class="ml-3 d-none d-lg-block">
-                                            <h3 class="h6 mb-0 ">Ксения Зайцева</h3>
-                                            <p>Вы: ок</p>
-                                            <span class="chat_info-time text-muted position-absolute "
-                                                >10:00</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="text-dark" href="" >
-                                <div
-                                    class="rounded bg-secondary mb-1 mt-1  col-12 border border-right-0 border-top-0 border-left-0 border-bottom-1">
-                                    <div class="row flex-nowrap overflow-hidden position-relative px-1 py-1">
+                                
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
                                         <div class="avatar_icon position-relative" style="height:60px">
                                             <img style="object-fit: cover; object-position: center;"
                                                 src="./assets/img/avatar.png" width="45px" height="45px"
                                                 class=" rounded-circle  " alt="" />
                                         </div>
-                                        <div class="ml-3 d-none d-lg-block">
-                                            <h3 class="h6 mb-0 " >Ксения Зайцева</h3>
-                                            <p>Вы: ок</p>
-                                            <span class="chat_info-time text-dark-50 position-absolute "
-                                                >10:00</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="text-dark" href="" >
-                                <div
-                                    class="rounded  mb-1 mt-1  col-12 border border-right-0 border-top-0 border-left-0 border-bottom-1">
-                                    <div class="row flex-nowrap overflow-hidden position-relative px-1 py-1">
+                            
+                                <div class=" py-1  my-1   col-12 ">
+                                    <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
                                         <div class="avatar_icon position-relative" style="height:60px">
                                             <img style="object-fit: cover; object-position: center;"
                                                 src="./assets/img/avatar.png" width="45px" height="45px"
                                                 class=" rounded-circle  " alt="" />
                                         </div>
-                                        <div class="ml-3 d-none d-lg-block">
-                                            <h3 class="h6 mb-0 " >Ксения Зайцева</h3>
-                                            <p>Вы: ок</p>
-                                            <span class="chat_info-time text-muted position-absolute "
-                                                >10:00</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </div>
-                        </div>
-                        <div 
-                            class="h-100 position-relative pt-5 mr-0 ml-0 px-0 mr-0  col-10 col-lg-6 ">
-
-                            <div class="position-relative container col-11 px-0 mx-2 px-sm-auto" style=" bottom: 0px; left: 0 !important; ">
-                                <div  class="message-page">
-                                    <div id="starting" class="col-12  mb-5">
-                                        <div class="text-center text-muted">
-                                            Клиенту <span href="" class="font-weight-bold text-black-50">Татьяна
-                                                Сергеева</span> присвоен ярлык <span href=""
-                                                class="font-weight-bold text-black-50">Подписчик</span>
-                                        </div>
+                    </div>
+                    <div class="d-flex h-100  b-box pt-3 " >    
+                        <div class=" h-100  b-box h-100 ml-0 pl-1 pr-1 mr-0 col-0 d-none  col-md-2 d-md-block col-lg-2 border border-right-1 border-top-0 border-left-0 border-bottom-0 overScroll" >
+                                
+                            <div class=" py-1  my-1   col-12 ">
+                                <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                    <div class="avatar_icon position-relative" style="height:60px">
+                                        <img style="object-fit: cover; object-position: center;"
+                                            src="./assets/img/avatar.png" width="45px" height="45px"
+                                            class=" rounded-circle  " alt="" />
                                     </div>
-                                    <div class="d-flex flex-column">
-                                        <div id="himMessage" class="col-12 d-block text-left  my-3">
-    
-                                            <div 
-                                                class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
-                                                <a href="" class="text-black">Файл - план.pdf</a>
-                                            </div>
-                                        </div>
-                                        <div id="myMessage" class="col-12 d-block text-right my-3">
-                                            <div 
-                                                class="chat_message-text float-right col-9  py-1 px-2 rounded-lg ">
-                                                <p>Да, посмотрел. У меня как раз есть движок для таких ботов. Сделаем за
-                                                    пару дней, будет работать через Гугл-таблицы
-                                                </p>
-                                            </div>
-    
-                                        </div>
-    
-                                        <div id="himMessage" class="col-12 d-block text-left  my-3">
-    
-                                            <div 
-                                                class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
-                                                <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div id="himMessage" class="col-12 d-block text-left  my-3">
-    
-                                            <div 
-                                                class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
-                                                <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div id="himMessage" class="col-12 d-block text-left  my-3">
-    
-                                            <div 
-                                                class="chat_message-texttext-left py-1 px-2 rounded-lg col-9 ">
-                                                <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
-                                                </p>
-                                            </div>
-                                        </div>
-    
-                                        <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
-    
-                                            <div 
-                                                class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
-                                                <p>Вопросы:
-                                                    Сроки запуска какие планируешь?
-                                                    Будут ли прямые эфиры перед стартом?</p>
-                                            </div>
-                                        </div>
-    
-                                        <div id="himMessage" class=" col-lg-12 d-block text-left  my-3">
-                                            <div  
-                                                class="chat_message-img text-left py-1 px-2 rounded-lg col-9  col-sm-6">
-                                                <img style="object-fit: cover; max-width: 100%; "
-                                                    src="./assets/img/Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400.jpg"
-                                                    class="d-block rounded-lg" alt=""/>
-                                            </div>
-                                        </div>
-                                </div>
-                                    
-                                    
-                                    <div class="d-flex  pl-0 bg-white col-10 col-lg-5 align-items-center" style=" position: fixed; bottom: 0px !important; z-index: 20;height: 75px !important; ">
-                                        <div class="col-8 col-sm-7">
-                                            <div class="input-group-lg input-group"></div>
-                                            <input type="text" class="form-control" aria-label="Large"
-                                                aria-describedby="inputGroup-sizing-sm">
-                                        </div>
-                                        <div class="col-6 col-sm-5 d-none d-sm-block">
-                                            <button class="btn btn-primary w-100">Отправить</button>
-                                        </div>
-                                        <div class="col-4 d-block d-sm-none">
-                                            <button class="btn btn-primary w-100">Отпр.</button>
-                                        </div>
-                                        <!-- <div class="input-group col-12 pl-0 my-0 py-0">
-                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                                            <div class="input-group-append">
-                                              <button class="btn btn-success" type="button">Love it</button>
-                                            </div>
-                                          </div> -->
+                                    <div class="ml-3 d-none d-lg-block">
+                                        <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                        <p>Вы: ок</p>
+                                        <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                            >10:00</span>
                                     </div>
-
                                 </div>
-
+                            </div>
+                                
 
                                 
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class=" contact_active point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+
+                                
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" py-1  my-1   col-12 ">
+                                        <div class="point row flex-nowrap overflow-hidden position-relative px-1 pb-0 pt-2 border border-right-0 border-top-0 border-left-0 border-bottom-1">
+                                            <div class="avatar_icon position-relative" style="height:60px">
+                                                <img style="object-fit: cover; object-position: center;"
+                                                    src="./assets/img/avatar.png" width="45px" height="45px"
+                                                    class=" rounded-circle  " alt="" />
+                                            </div>
+                                            <div class="ml-3 d-none d-lg-block">
+                                                <h3 class="h6 mb-0 chat_name" >Ксения Зайцева</h3>
+                                                <p>Вы: ок</p>
+                                                <span class="chat_info-time d-none d-xl-block text-muted position-absolute "
+                                                    >10:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                        </div>
+                        
+                        <div class="  px-0  col-12 col-md-10 col-lg-6 ">
+                            <div id="overScrollChat" class=" overScroll  chat_main container col-12 px-0 mx-0  px-sm-auto" >
+                                <div  class="mb-2 px-0 position-relative  col-12  b-box" >
+                                    <div class="chat_main-text col-12 px-0">
+                                        <div id="starting" class="col-12  mb-5">
+                                            <div class="text-center text-muted">
+                                                Клиенту <span href="" class="font-weight-bold text-black-50">Татьяна
+                                                    Сергеева</span> присвоен ярлык <span href=""
+                                                    class="font-weight-bold text-black-50">Подписчик</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column position-relative">
+                                            <div id="himMessage" class="col-12 d-block text-left  my-3  ">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <a href="" class="text-black">Файл - план.pdf</a>
+                                                </div>
+                                            </div>
+                                            <div id="myMessage" class="col-12 d-block text-right my-3">
+                                                <div 
+                                                    class="chat_message-text float-right col-9  py-1 px-2 rounded-lg ">
+                                                    <p>Да, посмотрел. У меня как раз есть движок для таких ботов. Сделаем за
+                                                        пару дней, будет работать через Гугл-таблицы
+                                                    </p>
+                                                </div>
+        
+                                            </div>
+        
+                                            <div id="himMessage" class="col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-texttext-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Кайф! Мне нравится твой продукт! Тогда начинаю прогрев по своим соц сетям
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+                                            <div id="himMessage" class="chat_message col-12 d-block text-left  my-3">
+        
+                                                <div 
+                                                    class="chat_message-text text-left py-1 px-2 rounded-lg col-9 ">
+                                                    <p>Вопросы:
+                                                        Сроки запуска какие планируешь?
+                                                        Будут ли прямые эфиры перед стартом?</p>
+                                                </div>
+                                            </div>
+    
+        
+                                            <div id="himMessage" class=" col-lg-12 d-block text-left  my-3">
+                                                <div  
+                                                    class="chat_message-img text-left py-1 px-2 rounded-lg col-9  col-sm-6">
+                                                    <img style="object-fit: cover; max-width: 100%; "
+                                                        src="./assets/img/Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400.jpg"
+                                                        class="d-block rounded-lg" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                     
+
+                                </div>
+
+                               
+                                
+                            </div>
+
+                            <div class="d-flex  input_message align-items-center position-relative  col-12  ">                                      
+                                <div class="col-8">
+                                    <div class="input-group-lg input-group"></div>
+                                    <input type="text" class="form-control" aria-label="Large"
+                                        aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <div class="d-none col-4 d-sm-block ">
+                                    <button class="btn w-75 btn-primary ">Отправить</button>
+                                </div>
+                                <div class="d-block col-4  d-sm-none ">
+                                    <button class="btn btn-primary w-100">Отпр.</button>
+                                </div>                         
                             </div>
                         </div>
-                        <div class="col-lg-3 d-none pl-0 d-lg-block w-100">
-                            <div style=" top: 52px;" class="h-100 border border-right-0  border-top-0 border-left-1 border-bottom-0 col-12 d-none d-lg-block w-10 position-fixed">
-                                <div class="px-1 py-1 ">
-                                    <div
-                                        class="text-center col-3 mt-3 border pb-4 border-bottom-1 border-top-0 border-left-0 border-right-0">
-                                        <img class="rounded-circle chat_avatar-lg" src="./assets/img/avatar.png"
-                                             alt=""/>
-                                        <h5 class="font-weight-bold mt-3">Татьяна Сергеева</h5>
-                                        <p class="w-75 mx-auto">Небольшая, но очень полезная заметка о клиенте</p>
-                                        <div class="d-flex justify-content-center mb-5">
-                                            <a href="" class="my-1 mx-1"><span class="badge badge-dark">подписчик</span></a>
-                                            <a href="" class="my-1 mx-1"><span
-                                                    class="badge badge-dark">когорта_01</span></a>
-                                            <a href="" class="my-1 mx-1"><span 
-                                                    class="opac_6 badge badge-light text-muted">добавить...</span></a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">joined_at</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_source</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_campaign</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_medium</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
+                       
+                        <div  class="px-0 h-100 border border-right-0  border-top-0 border-left-1 border-bottom-0 col-lg-4 d-none d-lg-block w-10 ">
+                            <div class="px-1 py-1 ">
+                                <div class="text-center col-12 mt-3 border pb-4 border-bottom-1 border-top-0 border-left-0 border-right-0">
+                                    <img class="rounded-circle chat_avatar-lg" src="./assets/img/avatar.png"
+                                            alt=""/>
+                                    <h5 class="font-weight-bold mt-3">Татьяна Сергеева</h5>
+                                    <p class="w-75 mx-auto">Небольшая, но очень полезная заметка о клиенте</p>
+                                    <div class="col-12 d-flex flex-wrap  mb-5">
+                                        <a href="" class="my-1 mx-1"><span class="badge badge-dark">подписчик</span></a>
+                                        <a href="" class="my-1 mx-1"><span
+                                                class="badge badge-dark">когорта_01</span></a>
+                                        <a href="" class="my-1 mx-1"><span 
+                                                class="opac_6 badge badge-light text-muted">добавить...</span></a>
                                     </div>
-                                    <div class=" mt-5 text-center col-4 col-xl-3 mt-2  pb-4  ">
-                                        <h5 class="text-left font-weight-bold mt-2 h6 col-9">Telegram @tsergeeva</h5>
-                                        <div class="d-flex justify-content-center mb-5 flex-wrap" >
-                                            <a href="" class="my-1 mx-1"><span class="badge badge-dark">подписчик</span></a>
-                                            <a href="" class="my-1 mx-1"><span
-                                                    class="badge badge-dark">когорта_01</span></a>
-                                            <a href="" class="my-1 mx-1"><span 
-                                                    class="opac-6 badge badge-light text-muted">добавить...</span></a>
-                                        </div>
-    
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_source</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_campaign</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-8 d-flex justify-content-between mt-2">
-                                            <span class="text-muted ">utm_medium</span>
-                                            <a href="" class="text-dark">
-                                                <p class="font-weight-bold ">Значение</p>
-                                            </a>
-                                        </div>
-                                        <a href="" class="text-center text-dark  font-weight-bold delete" >Очистить данные</a>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">joined_at</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
                                     </div>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_source</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_campaign</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_medium</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 text-center col-12    pb-4  ">
+                                    <h5 class=" font-weight-bold mt-2 h6 col-12">Telegram @tsergeeva</h5>
+                                    <div class="col-12 d-flex flex-wrap mb-5 flex-wrap" >
+                                        <a href="" class="my-1 mx-1"><span class="badge badge-dark">подписчик</span></a>
+                                        <a href="" class="my-1 mx-1"><span
+                                                class="badge badge-dark">когорта_01</span></a>
+                                        <a href="" class="my-1 mx-1"><span 
+                                                class="opac-6 badge badge-light text-muted">добавить...</span></a>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_source</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_campaign</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mt-2">
+                                        <span class="text-muted ">utm_medium</span>
+                                        <a href="" class="text-dark">
+                                            <p class="font-weight-bold ">Значение</p>
+                                        </a>
+                                    </div>
+                                    <a href="" class="text-center text-dark  font-weight-bold delete" >Очистить данные</a>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -503,6 +834,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+        <script src="./chat.js"></script>
 </body>
 
 </html>
