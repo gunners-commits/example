@@ -69,5 +69,3 @@ btnMobChat.addEventListener('click', (e)=>{
     chatsMobileAdaptive.classList.toggle('sidebar_mobile-seek')
     chatsMobileAdaptive.classList.toggle('sidebar_mobile-hide')
 });
-
-console.dir(document.querySelector('.chat_main-text').clientHeight);

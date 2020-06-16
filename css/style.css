@@ -10,11 +10,19 @@
 body{
     font-family: 'Ubuntu' , sans-serif !important;
     min-width: 350px !important;
-    max-width: 1920px !important;
+    
 }
 
 .logo{
     font-family: 'Press Start 2P', cursive !important;
+}
+
+.avatar_icon{
+    height: 60px;
+}
+
+.avatar_icon < img{
+    object-fit: cover; object-position: center;
 }
 
 .avatar_icon::after{
@@ -90,6 +98,10 @@ a{
 
 .nav_height > div{
     z-index: 30 !important;
+}
+
+.nav_item-help{
+    bottom: 0;
 }
 
 .opac-6{
@@ -225,3 +237,10 @@ a{
 .nav_item:hover{
     color: black !important;
 }
+
+.imgToSvg{
+}
+
+.svg{
+    font-size: 25px;
+}   
