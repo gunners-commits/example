@@ -1,2 +1,4 @@
 'use strict';
-overScrollChat.scrollTo(0, overScrollChat.scrollHeight);
+window.onload = function(){
+    overScrollChat.scrollTo(0, overScrollChat.scrollHeight);
+}

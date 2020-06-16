@@ -27,6 +27,8 @@ body{
 
 .link_Img-Profile{
     width:35px !important ; height: 35px !important ; 
+    object-fit: cover;
+    object-position: center;
 }
 
 .imgInMessage{
@@ -82,6 +84,20 @@ body{
     background-color: #3284FF;
 }
 
+.spinner_block-chatMain{
+    text-align: center;
+    
+}
+
+
+
+.fa-paperclip-icon{
+    position: relative; left: 0;
+    
+    margin-right: 5px;
+
+}
+
 .chat_text{
     max-width: 150px !important;
     overflow: hidden !important;
@@ -101,7 +117,8 @@ body{
 
 .chat_info-time{
     background-color: white;
-    right: 0px; bottom: 16px;
+    right: 0px; 
+    bottom: 16px;
     text-align: center;
     width: 55px !important;
 }
@@ -197,8 +214,10 @@ a{
 }
 
 .chat_ellips {
+    width: 25px;
+    height: 12px;
     z-index: 99;
-    top: -2px;
+    top: 12px;
     right: 10px;
     
 }
@@ -209,11 +228,30 @@ a{
     transform: rotate(90deg);
 }
 
-.chat_message-text{
-    background: #F6F6F6 !important; width: max-content  !important;
+.himMessage{
+    background: #F6F6F6 !important;
+}
+
+.myMessage-avatar{
+    order: 2;
+    margin-left: 15px;
+}
+
+.himMessage-avatar{
+    margin-right: 15px;
+}
+
+.chat_message-text, .chat_message-file {
+    width: max-content  !important;
+}
+
+.chat_message-file{
+    padding: 20px 10px;
+    text-decoration: underline !important;
 }
 
 .chat_message-img{
+    /* height: 100px !important; */
     width: 250px !important; background: #F6F6F6 !important; width: max-content  !important;
 }
 

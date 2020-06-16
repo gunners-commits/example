@@ -14,20 +14,19 @@
 <body>
     <div class="container-fluid navbar navbar-white">
         <a href="./index.html" class="navbar-brand text-dark d-flex align-items-center">
-            <img src="./assets/img/logo.png" alt=""/>
+            <img src="./assets/img/logo.png" alt="" />
             <h1 class="logo h5 ml-3 mt-3">BotBand</h1>
         </a>
 
     </div>
 
-    <div class="col-12 col-xl-9 mx-0 mx-xl-auto mt-5">
+    <div class="col-12 col-xl-9 mx-0 mx-xl-auto mt-3">
         <div class="col-12  col-lg-5 col-xl-4 mb-4">
             <div class="row  ">
-                <div class="posiion-relative " >
-                    <img class=" img-thumbnail page_profile-img" src="./assets/img/avatar.png" alt="Аватарка"
-                        />
+                <div class="posiion-relative ">
+                    <img class=" img-thumbnail page_profile-img" src="./assets/img/avatar.png" alt="Аватарка" />
                     <a href=""><i class="fas fa-upload fa-upload-icon text-white"></i></a>
-                            
+
                 </div>
                 <div class="ml-3 d-flex justify-content-center flex-column">
                     <h2 class="h5 position-relative mb-1">Василий Пупкин
@@ -42,7 +41,7 @@
 
             <form>
 
-                <h2 class=" font-weight-bold mb-4 mt-5 setting_block">Контакты</h2>
+                <h2 class="mb-4 mt-5 setting_block">Контакты</h2>
                 <div class="form-group row ">
                     <label for="inputEmail3" class="col-sm-3 col-form-label text-secondary">Email</label>
                     <div class="col-sm-6">
@@ -65,28 +64,31 @@
 
                 <div class="col-9 setting_block">
                     <div class="btn-group d-flex row justify-content-between align-items-start ">
-                        <h2 class=" font-weight-bold mb-4 ">Локаль</h2>
-                        <button type="button" class="py-0 col-3 btn text-dark dropdown-toggle" data-toggle="dropdown"
+                        <h2 class=" mb-4 ">Локаль</h2>
+                        <button type="button" class="py-0 col-2 btn text-dark dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Выберите Язык
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">
-                                <img src="./assets/svg/lanEng.svg" alt=""/>
+                                <img src="./assets/svg/lanEng.svg" alt="" />
                                 Русский</button>
                             <button class="dropdown-item" type="button">
-                                <img src="./assets/svg/lanRus.svg" alt=""/>
+                                <img src="./assets/svg/lanRus.svg" alt="" />
                                 Английский</button>
                         </div>
                     </div>
+
+                    
                 </div>
 
-                <div class="form-group row  mb-5 mt-4 ">
-                    <label for="language" class=" my-1 col-lg-1 col-sm-1 col-form-label text-secondary">Язык</label>
-                    <div class="col-sm-3 col-lg-3 my-1">
+                <div class="form-group row ">
+                    <label for="language" class=" my-1 col-lg-2 col-sm-2  text-secondary">Язык</label>
+                    <div class="col-sm-4 col-lg-3 my-1">
                         <input type="text" class="form-control" id="language">
                     </div>
-                    <button class="btn btn-secondary dropdown-toggle my-1 ml-3" type="button" id="hours"
+                    <div class="col-3">
+                        <button class="btn btn-secondary dropdown-toggle my-1 d-block " type="button" id="hours"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Часовой пояс
                     </button>
@@ -95,30 +97,36 @@
                         <a class="dropdown-item active" href="#">Москва</a>
                         <a class="dropdown-item" href="#">Париж</a>
                     </div>
+                    </div>
                 </div>
-        </div>
+                <h2 class="  mb-4 setting_block">Изменение пароля</h2>
+                <div class="form-group col-sm-9 col-12 col-xl-9 ">
+                    <div class="row ">
+                        <label for="newpassword"
+                            class="col-12 col-xl-2 col-form-label text-secondary px-0 px-md-auto">Новый
+                            пароль</label>
+                        <div class="col-xl-3 px-0 px-md-auto">
+                            <input type="password" class="form-control" id="newpassword">
+                        </div>
+                        <label for="checkpas"
+                            class="col-12 col-xl-4  col-md-4 col-form-label text-secondary pl-xl-5 pl-md-3  pl-0 px-md-auto">Повторите
+                            новый
+                            пароль</label>
+                        <div class="col-xl-3 px-0 px-md-auto">
+                            <input type="password" class="form-control" id="checkpas">
+                        </div>
+                    </div>
+                    </div>
+        
 
-        <h2 class=" font-weight-bold mb-5 setting_block">Изменение пароля</h2>
-        <div class="form-group col-sm-9 col-12 col-xl-9 ">
-            <div class="row ">
-                <label for="newpassword" class="col-12 col-xl-2 col-form-label text-secondary px-0 px-md-auto">Новый пароль</label>
-                <div class="col-xl-3 px-0 px-md-auto">
-                    <input type="password" class="form-control" id="newpassword">
-                </div>
-                <label for="checkpas" class="col-12 col-xl-4  col-md-4 col-form-label text-secondary pl-xl-5 pl-md-3  pl-0 px-md-auto">Повторите новый
-                    пароль</label>
-                <div class="col-xl-3 px-0 px-md-auto">
-                    <input type="password" class="form-control" id="checkpas">
-                </div>
-            </div>
-        </div>
 
-        <div class="form-group row  mt-5">
-            <div class="col-6  col-lg-2 ">
-                <button type="submit" class="btn btn-primary  w-100">Сохранить</button>
-            </div>
-        </div>
-        </form>
+
+                    <div class="form-group row  mt-5">
+                        <div class="col-6  col-lg-2 ">
+                            <button type="submit" class="btn btn-primary  w-100">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
