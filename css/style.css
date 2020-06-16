@@ -13,6 +13,10 @@ body{
     
 }
 
+.inputMain{
+    margin-top: 150px;
+}
+
 .logo{
     font-family: 'Press Start 2P', cursive !important;
 }
@@ -21,7 +25,36 @@ body{
     height: 60px;
 }
 
-.avatar_icon < img{
+.link_Img-Profile{
+    width:35px !important ; height: 35px !important ; 
+}
+
+.imgInMessage{
+    object-fit: cover; max-width: 100%;
+}
+
+.page_profile-img{
+    border-radius: 50% !important;
+    width: 90px !important; height: 90px !important;  object-fit: cover; object-position: center;
+}
+
+.fa-edit-icon{
+    position: absolute; right: -50px !important; top: 0px; 
+}
+
+.fa-upload-icon{
+    position: absolute; left:37px !important;top: 40%;
+}
+
+.page_project-delete{
+    top: 5px; right: 20px;
+}
+
+.iconHelp{
+    bottom: 0;
+}
+
+.avatar_icon > img{
     object-fit: cover; object-position: center;
 }
 
@@ -47,6 +80,34 @@ body{
     width: 14px;
     height: 14px;
     background-color: #3284FF;
+}
+
+.chat_text{
+    max-width: 150px !important;
+    overflow: hidden !important;
+    word-wrap: none !important;
+}
+
+.chat_text > p{
+
+    white-space: nowrap;
+    
+}
+
+.chat_name{
+    min-width: 150px;
+    height: 20px !important;
+}
+
+.chat_info-time{
+    background-color: white;
+    right: 0px; bottom: 16px;
+    text-align: center;
+    width: 55px !important;
+}
+
+.cardLink{
+    height: 200px !important;
 }
 
 .cardLink i{
@@ -81,15 +142,15 @@ body{
 }
 
 .main_block-height{
-    height: 100vh;
+    height: 100vh !important;
 }
 
 .nav_height{
-    height: 5% !important; 
+    height: 6% !important; 
 }
 
 .page_chat-height{
-    height: 95% !important;
+    height: 94% !important;
 }
 
 a{
@@ -108,16 +169,19 @@ a{
     opacity: .6;
 }
 
-.chat_name{
-    min-width: 130px;
-}
+
 
 .chat-list{
     min-width: 85px;
 }
 
-.chat_info-time{
-    right: 5px; bottom: 16px;
+.spinner_chat{
+    bottom: 0  ;
+    right: 0 !important;
+}
+
+.spinner_block{
+    height: 20px;
 }
 
 .chat-list a{
@@ -126,6 +190,23 @@ a{
 
 .chat_avatar-lg{
     width: 125px; object-fit: cover; height: 125px;
+}
+
+.chat_with:hover .chat_ellips {
+    display: block !important;
+}
+
+.chat_ellips {
+    z-index: 99;
+    top: -2px;
+    right: 10px;
+    
+}
+
+.chat_ellips i{
+    top: 0px;
+    right: 10px;
+    transform: rotate(90deg);
 }
 
 .chat_message-text{
@@ -164,6 +245,7 @@ a{
     
 }
 
+
 .channel-item:hover > .crossChannel, .Integration-item:hover > .crossChannel {
     display: block !important;
 }
@@ -181,6 +263,7 @@ a{
 }
 
 .chats_mobile{
+    color: #8B8B8B !important;
     position: absolute;
     width: 30px !important;padding-left: 15px !important;
     font-size: 50px ;
@@ -214,14 +297,15 @@ a{
     height: 400px !important;
     z-index: 30;
     min-width: 100px !important;
-    
+    background-color: #EDEEF0 !important;
     border-radius: 4px;
 }
 
 .sidebar_mobile-seek{
+    background-color: #EDEEF0 !important;
     transition: left 1s ease;
     position: absolute;
-    left:10px;
+    left:2px;
     display: block !important;
     height: 400px !important;
     z-index: 30;
@@ -236,9 +320,6 @@ a{
 
 .nav_item:hover{
     color: black !important;
-}
-
-.imgToSvg{
 }
 
 .svg{

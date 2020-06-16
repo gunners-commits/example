@@ -60,12 +60,14 @@ let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive');
 let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon')
 
 
+btnMobChat.addEventListener('click', (e)=>{
+    chatsMobileAdaptive.classList.toggle('sidebar_mobile-seek')
+    chatsMobileAdaptive.classList.toggle('sidebar_mobile-hide')
+});
 navbarTogglerIcon.addEventListener('click', (e)=>{
     chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
     chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
 });
 
-btnMobChat.addEventListener('click', (e)=>{
-    chatsMobileAdaptive.classList.toggle('sidebar_mobile-seek')
-    chatsMobileAdaptive.classList.toggle('sidebar_mobile-hide')
-});
+
+
