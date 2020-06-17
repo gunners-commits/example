@@ -284,6 +284,10 @@ a{
     
 }
 
+.custom-control-label{
+    cursor: pointer !important;
+}
+
 .chat_message-file:hover .fa-ellipsis-h-mess, .chat_message-text:hover .fa-ellipsis-h-mess, .chat_message-img:hover .fa-ellipsis-h-mess{
     display: block !important;
     
@@ -307,6 +311,10 @@ a{
     top: 0px;
     right: 12px;
     font-size: 20px;
+}
+
+.table_remove-items{
+    cursor: pointer;
 }
 
 .chat_message-img{
