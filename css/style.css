@@ -32,7 +32,7 @@ body{
 }
 
 .imgInMessage{
-    object-fit: cover; max-width: 100%;
+    object-fit: cover; max-width: 300px;
 }
 
 .page_profile-img{
@@ -310,8 +310,11 @@ a{
 }
 
 .chat_message-img{
+    margin-top: 10px;
     /* height: 100px !important; */
-    width: 250px !important; background: #F6F6F6 !important; width: max-content  !important;
+    /* width: 250px !important;  */
+    background: #F6F6F6 !important;
+    width: max-content  !important;
 }
 
 .overScroll{
