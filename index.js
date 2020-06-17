@@ -52,6 +52,14 @@ $('#modalField').on('show.bs.modal', function (event) {
     modal.find('.modal-body input').val(recipient)
 })
 
+$('#addTag').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever') 
+    var modal = $(this)
+    modal.find('.modal-title').html()
+    modal.find('.modal-body input').val(recipient)
+})
+
 // $('#myModal').modal(options)
 
 

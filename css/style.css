@@ -44,12 +44,21 @@ body{
     position: absolute; right: -50px !important; top: 0px; 
 }
 
+.fa-upload-chat{
+    top:54.5px  !important;
+    left: calc(50% - 8px);
+}
+
 .fa-upload-icon{
     position: absolute; left:37px !important;top: 40%;
 }
 
 .page_project-delete{
     top: 5px; right: 20px;
+}
+
+.message_ellips{
+    transform: rotate(90deg);
 }
 
 .iconHelp{
@@ -117,10 +126,10 @@ body{
 
 .chat_info-time{
     background-color: white;
-    right: 0px; 
+    right: 1px; 
     bottom: 16px;
     text-align: center;
-    width: 55px !important;
+    width: 50px !important;
 }
 
 .cardLink{
@@ -168,6 +177,28 @@ body{
 
 .page_chat-height{
     height: 94% !important;
+}
+
+.chat-col{
+    height: 100% !important;
+    padding-bottom: 0;
+}
+.messages{
+    height:95% !important
+}
+
+.fa-filter{
+    font-size: 25px !important;
+}
+
+.wtite_first{
+    height: 5% !important;
+}
+
+.wtite_first i{
+    font-size: 25px;
+    top:10px;
+    left: calc(50% - 12.5px);
 }
 
 a{
@@ -235,9 +266,11 @@ a{
 .myMessage-avatar{
     order: 2;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .himMessage-avatar{
+    cursor: pointer;
     margin-right: 15px;
 }
 
@@ -245,9 +278,35 @@ a{
     width: max-content  !important;
 }
 
-.chat_message-file{
-    padding: 20px 10px;
-    text-decoration: underline !important;
+.chat_message-file, .chat_message-text, .chat_message-img{
+
+    padding: 20px 10px  !important;
+    
+}
+
+.chat_message-file:hover .fa-ellipsis-h-mess, .chat_message-text:hover .fa-ellipsis-h-mess, .chat_message-img:hover .fa-ellipsis-h-mess{
+    display: block !important;
+    
+}
+
+.chat_message-file:hover .fa-ellipsis-h-mess-my, .chat_message-text:hover .fa-ellipsis-h-mess-my, .chat_message-img:hover .fa-ellipsis-h-mess-my{
+    display: block !important;
+    
+}
+.fa-ellipsis-h-mess-my{
+    cursor: pointer;
+    display: none !important;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.fa-ellipsis-h-mess{
+    display: none !important;
+    cursor: pointer;
+    top: 0px;
+    right: 12px;
+    font-size: 20px;
 }
 
 .chat_message-img{
@@ -325,6 +384,16 @@ a{
     bottom:0;
     max-width: inherit;
     width: 100%;
+}
+
+.input_message-main{
+    cursor: pointer;
+    background: url('../assets/svg/ellipsis-h-solid.svg') no-repeat left 15px center;
+}
+
+.icon_input{
+    color: #8B8B8B;
+    font-size: 20px;
 }
 
 .sidebar_mobile-hide{
