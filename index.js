@@ -63,19 +63,17 @@ $('#addTag').on('show.bs.modal', function (event) {
 // $('#myModal').modal(options)
 
 
-let btnMobChat = document.querySelector('.chats_mobile');
-let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive');
-let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon')
+
+let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive'),
+    navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
 
 
-btnMobChat.addEventListener('click', (e)=>{
-    chatsMobileAdaptive.classList.toggle('sidebar_mobile-seek')
-    chatsMobileAdaptive.classList.toggle('sidebar_mobile-hide')
-});
+
 navbarTogglerIcon.addEventListener('click', (e)=>{
     chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
     chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
 });
-
-
-
+hideBlock.addEventListener('click', (e)=>{
+    toggleClientBlock.classList.toggle('infoViewers-hide');
+    toggleClientBlock.classList.toggle('infoViewers-visible');
+});

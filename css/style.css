@@ -55,6 +55,15 @@ body{
 
 .page_project-delete{
     top: 5px; right: 20px;
+    
+}
+
+.page_client-chat{
+    height: 300px !important;
+}
+
+.delete:hover{
+    text-decoration: underline !important;
 }
 
 .message_ellips{
@@ -63,6 +72,10 @@ body{
 
 .iconHelp{
     bottom: 0;
+}
+
+.img{
+    object-fit: cover; object-position: center; 
 }
 
 .avatar_icon > img{
@@ -201,10 +214,6 @@ body{
     left: calc(50% - 12.5px);
 }
 
-a{
-    text-decoration: none !important;
-}
-
 .nav_height > div{
     z-index: 30 !important;
 }
@@ -280,7 +289,7 @@ a{
 
 .chat_message-file, .chat_message-text, .chat_message-img{
 
-    padding: 20px 10px  !important;
+    padding: 18px 10px  !important;
     
 }
 
@@ -323,6 +332,29 @@ a{
     /* width: 250px !important;  */
     background: #F6F6F6 !important;
     width: max-content  !important;
+}
+
+.overScroll-x{
+    overflow-x: scroll !important;
+}
+
+
+.overScroll-x::-webkit-scrollbar{
+    height:  3px !important;
+
+}
+
+.fa-address-card {
+    font-size: 30px;
+}
+
+.overScroll-x::-webkit-scrollbar-track{
+    background-color: white !important;
+}
+
+.overScroll-x::-webkit-scrollbar-thumb{
+    background-color: #AFAFAF;
+    border-radius: 8px !important;
 }
 
 .overScroll{
@@ -443,3 +475,28 @@ a{
 .svg{
     font-size: 25px;
 }   
+
+.page_client-infoViewers{
+    border: 1px solid #B2B2B2;
+    border-radius: 8px;
+    left: 0;
+    top: 10px;
+    width: 350px !important;
+    height: 500px !important;
+    background-color: white;
+    z-index: 999;
+    transition: left 1s ease;
+}
+
+.infoViewers-hide{
+    left: -400px;
+}
+.infoViewers-visible{
+    left: 0;
+}
+.hideBlock{
+    font-size: 45px;
+    position: sticky;
+    top: 0;
+    float: right;
+}
