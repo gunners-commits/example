@@ -7,10 +7,15 @@
     box-sizing: border-box;   
 }
 
-body{
+body, html{
     font-family: 'Ubuntu' , sans-serif !important;
     min-width: 350px !important;
+    max-height: 1080px;
     
+}
+
+.badge-secondary{
+
 }
 
 .inputMain{
@@ -38,6 +43,11 @@ body{
 .page_profile-img{
     border-radius: 50% !important;
     width: 90px !important; height: 90px !important;  object-fit: cover; object-position: center;
+}
+
+.profile_img{
+    border-radius: 50% !important;
+    width: 90px !important; height: 90px !important; 
 }
 
 .fa-edit-icon{
@@ -475,6 +485,8 @@ body{
 .svg{
     font-size: 25px;
 }   
+
+
 
 .page_client-infoViewers{
     border: 1px solid #B2B2B2;
