@@ -384,7 +384,8 @@ body, html{
 .crossChannel{
     display: none;
     top: 2px;
-    right: 6px;
+    right: 5px;
+
 }
 
 .chat_main{
@@ -515,25 +516,74 @@ body, html{
 }
 
 .vk{
-
+    background-color: #4A76A8 !important;
+    color: white;
 }
 
 .fb{
-
+    background-color: #4267B2;
+    color: white;
 }
 
 .tg{
+    color: white ;
+    background-color: #0088cc ;
+}
 
+.channel_ic{
+font-size: 18px;
 }
 
 .wa{
-
+    background-color: #1EBEA5;
+    color: white;
 }
 
 .vb{
-
+    background-color: #8950A0 ;
+    color: white;
 }
 
 .ok{
+    background-color: #ed812b;
+    color: white;
+}
 
+
+.hideEdit{
+    position: absolute;
+    left: calc(50% - 8px) ;
+    
+}
+
+.field_item:hover .hideEdit{
+    display: inline-block !important;
+}   
+
+.field_item:hover span{
+    visibility: hidden;
+} 
+
+.channel_not-active{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;  
+    background-color: red; 
+}
+
+.channel_active{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;  
+    background-color: #8AC176; 
 }

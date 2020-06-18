@@ -2,12 +2,17 @@
 
 let deleteIcon = document.querySelectorAll('.deleteIcon');
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  
+
 $('#edit').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) 
     var recipient = button.data('whatever') 
 
     var modal = $(this)
-    modal.find('.modal-title').text('Проект' + recipient)
+    modal.find('.modal-title').text('Проект ' + recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
@@ -48,7 +53,7 @@ $('#modalField').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget)
     var recipient = button.data('whatever') 
     var modal = $(this)
-    modal.find('.modal-title').html(recipient)
+    modal.find('.modal-title').html( recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
