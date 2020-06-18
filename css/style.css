@@ -511,8 +511,7 @@ body, html{
 }
 
 .left_sidebar{
-    max-width:  100px !important;
-    /* min-width: 90px !important; */
+    max-width:  90px !important;
 }
 
 .vk{
