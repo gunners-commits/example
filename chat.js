@@ -1,6 +1,5 @@
 'use strict';
 window.onload = function(){
-
        let  overScrollChat = document.querySelectorAll('.overScrollChat');
        overScrollChat.forEach((e)=>{
             e.scrollTo(0, e.scrollHeight);

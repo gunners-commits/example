@@ -2,9 +2,16 @@
 
 let deleteIcon = document.querySelectorAll('.deleteIcon');
 
+
+const button = document.querySelector('#button');
+const tooltip = document.querySelector('#tooltip');
+
+
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+    $('[data-toggle="tooltip"]').tooltip({
+        boundary: 'window'
+    })
+ })
   
 
 $('#edit').on('show.bs.modal', function (event) {
@@ -77,8 +84,4 @@ let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive'),
 navbarTogglerIcon.addEventListener('click', (e)=>{
     chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
     chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
-});
-hideBlock.addEventListener('click', (e)=>{
-    toggleClientBlock.classList.toggle('infoViewers-hide');
-    toggleClientBlock.classList.toggle('infoViewers-visible');
 });

@@ -34,7 +34,15 @@ body, html{
 }
 
 .imgInMessage{
-    object-fit: cover; max-width: 300px;
+    object-fit: cover; max-width: 250px;
+    /* min-width: 200px !important; */
+}
+
+@media (max-width:768px){
+    .imgInMessage{
+        object-fit: cover; max-width: 200px !important;
+
+    }
 }
 
 .page_profile-img{
@@ -127,30 +135,15 @@ body, html{
 
 }
 
-.chat_text{
-    max-width: 150px !important;
-    overflow: hidden !important;
-    word-wrap: none !important;
-}
 
-.chat_text > p{
-
-    white-space: nowrap;
-    
-}
 
 .chat_name{
     min-width: 150px;
     height: 20px !important;
+    font-weight: bold !important
 }
 
-.chat_info-time{
-    background-color: white;
-    right: 1px; 
-    bottom: 16px;
-    text-align: center;
-    width: 50px !important;
-}
+
 
 .cardLink{
     height: 200px !important;
@@ -191,6 +184,30 @@ body, html{
     height: 100vh !important;
 }
 
+@media (min-width:768px) and (max-width:992px){
+    .page_main{
+        box-sizing: border-box;
+        max-width: calc(100% - 70px ) !important; 
+
+    }
+    
+    .left_sidebar{
+        max-width: 70px !important;
+    }
+}
+
+@media  (min-width:993px){
+    .page_main{
+        box-sizing: border-box;
+        max-width: calc(100% - 90px ) !important; 
+
+    }
+    
+    .left_sidebar{
+        max-width: 90px !important;
+    }
+}
+
 .nav_height{
     height: 6% !important; 
 }
@@ -204,22 +221,31 @@ body, html{
     padding-bottom: 0;
 }
 .messages{
-    height:95% !important
+    height:94% !important
 }
 
 .fa-filter{
     font-size: 25px !important;
 }
 
-.wtite_first{
-    height: 5% !important;
+.write_first button{
+    white-space: nowrap;
 }
 
-.wtite_first i{
+.write_first{
+    height: 6% !important;
+    
+}
+
+.write_first > i{
     font-size: 25px;
     top:10px;
     left: calc(50% - 12.5px);
+
+    color: #007BFF !important;
 }
+
+
 
 .nav_height > div{
     z-index: 30 !important;
@@ -260,12 +286,19 @@ body, html{
     display: block !important;
 }
 
+
+@media (max-width:992px){
+    .chat_with:hover .chat_ellips {
+        display: none !important;
+    }
+}
+
 .chat_ellips {
     width: 25px;
     height: 12px;
     z-index: 99;
-    top: 12px;
-    right: 10px;
+    top: 27px;
+    right: 5px;
     
 }
 
@@ -275,9 +308,10 @@ body, html{
     transform: rotate(90deg);
 }
 
-.himMessage{
-    background: #F6F6F6 !important;
+.message:not(.chat_message-img){
+    background: #F6F6F6 ;
 }
+
 
 .myMessage-avatar{
     order: 2;
@@ -285,7 +319,7 @@ body, html{
     cursor: pointer;
 }
 
-.himMessage-avatar{
+.message-avatar{
     cursor: pointer;
     margin-right: 15px;
 }
@@ -304,28 +338,35 @@ body, html{
     cursor: pointer !important;
 }
 
-.chat_message-file:hover .fa-ellipsis-h-mess, .chat_message-text:hover .fa-ellipsis-h-mess, .chat_message-img:hover .fa-ellipsis-h-mess{
-    display: block !important;
-    
+.message:hover .message_settings-my, .message:hover .message_settings, .message:hover .time_message{
+    visibility: visible;
 }
 
-.chat_message-file:hover .fa-ellipsis-h-mess-my, .chat_message-text:hover .fa-ellipsis-h-mess-my, .chat_message-img:hover .fa-ellipsis-h-mess-my{
-    display: block !important;
-    
+
+.time_message{
+
+    /* visibility: hidden; */
+    position: absolute !important;
+    display: none;
+    top: 0;
+    font-size: 12px;
+    font-weight: bold;
 }
-.fa-ellipsis-h-mess-my{
+
+.message_settings-my {
     cursor: pointer;
-    display: none !important;
-    top: 0px;
+    visibility: hidden;
+    top: 10px;
     left: 10px;
+
     font-size: 20px;
 }
 
-.fa-ellipsis-h-mess{
-    display: none !important;
+.message_settings{
+    visibility: hidden;
     cursor: pointer;
-    top: 0px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     font-size: 20px;
 }
 
@@ -334,15 +375,15 @@ body, html{
 }
 
 .chat_message-img{
-    margin-top: 10px;
+    
     /* height: 100px !important; */
     /* width: 250px !important;  */
-    background: #F6F6F6 !important;
     width: max-content  !important;
 }
 
 .overScroll-x{
     overflow-x: scroll !important;
+
 }
 
 
@@ -365,7 +406,8 @@ body, html{
 }
 
 .overScroll{
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 }
 
 .overScroll::-webkit-scrollbar{
@@ -377,7 +419,7 @@ body, html{
 }
 
 .overScroll::-webkit-scrollbar-thumb{
-    background-color: #AFAFAF;
+    background-color: #007BFF;
     border-radius: 8px;
 }
 
@@ -389,7 +431,7 @@ body, html{
 }
 
 .chat_main{
-    height: 85% !important;
+    height: 90% !important;
     
 }
 
@@ -428,19 +470,15 @@ body, html{
 }
 
 .input_message{
-    background-color: #EDEEF0;
+    background-color: white;
     border-top: 1px solid #DEE2E6;
     z-index: 20;
-    height: 15% !important;
+    height: 10% !important;
     bottom:0;
     max-width: inherit;
     width: 100%;
 }
 
-.input_message-main{
-    cursor: pointer;
-    background: url('../assets/svg/ellipsis-h-solid.svg') no-repeat left 15px center;
-}
 
 .icon_input{
     color: #8B8B8B;
@@ -511,9 +549,7 @@ body, html{
     float: right;
 }
 
-.left_sidebar{
-    max-width:  90px !important;
-}
+
 
 .vk{
     background-color: #4A76A8 !important;
@@ -586,4 +622,32 @@ font-size: 18px;
     height: 10px;
     border-radius: 50%;  
     background-color: #8AC176; 
+}
+
+.message_text{
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.chat_text{
+font-size: 14px !important;
+
+}
+
+.chat_info-time{
+    /* background-color: white; */
+    width: 40px !important;
+    right: 5px; 
+    bottom: -2px;
+    position: absolute;
+    display: block;
+    /* text-align: right; */
+    /* width: 50px !important; */
+}
+
+.chat_active{
+    background-color: rgba(0, 0, 0, .05);
 }
