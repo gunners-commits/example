@@ -78,14 +78,112 @@
                                 <h1 class="h5 logo ml-3 mb-0 pb-0 d-none d-sm-inline-block text-dark">BotBand</h1>
 
                             </a>
-                            <div class="input-group col-6 col-sm-5">
-                                <div class="input-group-sm"><button class="btn btn-secondary" type="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                            class="fas fa-search mr-3"></i></button></div>
-
-                                <input type="text" class="form-control" placeholder="" aria-label=""
-                                    aria-describedby="basic-addon1">
-                            </div>
+                            
+                            <div class="col-6  input-group">
+                                <div class="input-group-prepend ">
+                                  <button id="filterBtnMob" class="btn filter_btn py-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"><i class="fas fa-search mr-3"></i></button>
+                                    <div class="filter_dropdown overScroll p-2 pt-3 bg-white filter_dropdown-hide ">
+                                        <div class="col-12 overFlow  px-1 ">
+                                          <h5 class="text-left ">Сегменты</h5>
+                                          <div class="mt-3">
+                                            <span class="segments_item d-block p-2 text-left position-relative point text-overflow chat_active rounded">Сегмент 1<i class="fas fa-times  point cross position-absolute"></i></span>
+                                            <span class="segments_item d-block p-2 text-left position-relative point text-overflow">Сегмент 2<i class="fas fa-times  point cross position-absolute"></i></span>
+                                            <span class="segments_item d-block p-2 text-left position-relative point text-overflow">Сегмент 3<i class="fas fa-times  point cross position-absolute"></i></span>
+                                          </div>
+                
+                
+                                        </div>
+                                        <div class="col-12 px-3 border border-right-0 border-bottom-0 border-top-1 pt-2 border-left-0 max-content-height">
+                
+                                          <div class="d-flex flex-column ">
+                                            <div class="col-12 p-2 filter_card border rounded position-relative">
+                                              <div class="row w-100">
+                                                <div class="col-3 col-lg-2 d-flex align-items-center">
+                                                  <span class="border rounded p-2 w-100 text-center point">И</span>
+                                                </div>
+                                                <div class="col-9 pl-0 pr-0 col-lg-10  ">
+                                                  <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                    <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее
+                                                      сообщение</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                    <i class="fas fa-times  text-muted point"></i>
+                                                  </div>
+                                                  <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                    <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее
+                                                      сообщение</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                    <i class="fas fa-times  text-muted point"></i>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex ">
+                
+                                                <span class="text-muted point text_Decoration mr-2">+ условие</span>
+                                                <span class="text-muted point text_Decoration mr-2">+ группа условий</span>
+                                              </div>
+                
+                                              <div class="position-absolute point filter_card-close bg-secondary">
+                                                <i class="fas fa-times  text-white"></i>
+                                              </div>
+                                            </div>
+                
+                                            <div class="col-2 my-3 px-0">
+                                              <p class="border rounded mb-0 p-2  text-center point">Или</p>
+                                            </div>
+                
+                                            <div class="col-12   p-2 filter_card border rounded position-relative">
+                                              <div class="row w-100">
+                                                <div class="col-3 col-lg-2 d-flex align-items-center">
+                                                  <span class="border rounded p-2 w-100 text-center point">И</span>
+                                                </div>
+                                                <div class="col-9 pl-0 pr-0 col-lg-10  ">
+                                                  <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                    <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее
+                                                      сообщение</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                    <i class="fas fa-times  text-muted point"></i>
+                                                  </div>
+                                                  <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                    <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее
+                                                      сообщение</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                    <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                    <i class="fas fa-times  text-muted point"></i>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex ">
+                
+                                                <span class="text-muted point text_Decoration mr-2">+ условие</span>
+                                                <span class="text-muted point text_Decoration mr-2">+ группа условий</span>
+                                              </div>
+                                              <div class="position-absolute point filter_card-close bg-secondary">
+                                                <i class="fas fa-times  text-white"></i>
+                                              </div>
+                
+                                            </div>
+                                            <div class="d-flex my-2">
+                                              <button type="button" class="d-block my-1 mr-2  btn btn-secondary">Сохранить</button>
+                                              <button type="button" class="d-block my-1 mr-2  btn btn-secondary">Сбросить
+                                                фильтр</button>
+                                            </div>
+                                          </div>
+                
+                                        </div>
+                
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control col-9  align-self-center"
+                                  aria-label="Text input with dropdown button">
+                              </div>
 
                             <i class="fas fa-user-plus point col-1 "></i>
 
@@ -154,7 +252,7 @@
                         </div>
                         <div class="d-flex d-none   d-md-flex align-items-center">
                             <div aria-label="breadcrumb "
-                                class="col-md-4 col-lg-3 col-xl-4 pl-0 d-none  d-md-inline-block ">
+                                class="col-md-3 pl-0 pr-0 d-none  d-md-inline-block ">
                                 <ol class="breadcrumb bg-white pb-0 d-none col-12  d-xl-flex ">
                                     <li class="breadcrumb-item "><a href="#" class="text-dark">Women Strategy Club</a>
                                     </li>
@@ -165,15 +263,111 @@
                                     <li class="breadcrumb-item active" aria-current="page">Клиенты <span class="ml-2">12371</span></li>
                                 </ol>
                             </div>
-                            <div class="input-group input-group-sm col-md-5 col-xl-4 d-none  d-md-flex">
-                                <div class="input-group-prepend"><button class="btn btn-secondary" type="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Поиск и
-                                        фильтр</button></div>
-
-                                <input type="text" class="form-control" placeholder="" aria-label=""
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="d-md-flex col-3 col-lg-4 d-none align-items-center justify-content-end">
+                            <div class="col-md-6 px-0 align-items-center d-none d-md-block">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <button class="btn filter_btn" id="filterBtn" type="button"><i
+                                        class="fas fa-filter  point"></i></button>
+                                    <div class="filter_dropdown  overScroll p-2 pt-3 bg-white filter_dropdown-hide  ">
+                                      <div class="col-2 overFlow  px-1 ">
+                                        <h5 class="text-left ">Сегменты</h5>
+                                        <div class="mt-3">
+                                          <span  class="segments_item d-block p-2 text-left position-relative point text-overflow chat_active rounded">Сегмент 1<i class="fas fa-times  point cross position-absolute"></i></span>
+                                          <span class="segments_item d-block p-2 text-left position-relative point text-overflow">Сегмент 2<i class="fas fa-times  point cross position-absolute"></i></span>
+                                          <span class="segments_item d-block p-2 text-left position-relative point text-overflow">Сегмент 3<i class="fas fa-times  point cross position-absolute"></i></span>
+                                        </div>
+                  
+                  
+                                      </div>
+                                      <div class="col-10 px-3 border border-right-0 border-bottom-0 border-top-0 border-left-1 max-content-height">
+                  
+                                        <div class="d-flex flex-column ">
+                                          <div class="col-12 p-2 filter_card border rounded position-relative">
+                                            <div class="row w-100">
+                                              <div class="col-3 col-lg-2 d-flex align-items-center">
+                                                <span class="border rounded p-2 w-100 text-center point">И</span>
+                                              </div>
+                                              <div class="col-9 pl-0 pr-0 col-lg-10  ">
+                                                <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                  <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее сообщение</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                  <i class="fas fa-times  text-muted point"></i>
+                                                </div>
+                                                <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                  <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее сообщение</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                  <i class="fas fa-times  text-muted point"></i>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex ">
+                  
+                                              <span class="text-muted point text_Decoration mr-2">+ условие</span>
+                                              <span class="text-muted point text_Decoration mr-2">+ группа условий</span>
+                                            </div>
+                  
+                                            <div class="position-absolute point filter_card-close bg-secondary">
+                                              <i class="fas fa-times  text-white"></i>
+                                            </div>
+                                          </div>
+                  
+                                          <div class="col-2 my-3 px-0">
+                                            <p class="border rounded mb-0 p-2  text-center point">Или</p>
+                                          </div>
+                  
+                                          <div class="col-12   p-2 filter_card border rounded position-relative">
+                                            <div class="row w-100">
+                                              <div class="col-3 col-lg-2 d-flex align-items-center">
+                                                <span class="border rounded p-2 w-100 text-center point">И</span>
+                                              </div>
+                                              <div class="col-9 pl-0 pr-0 col-lg-10  ">
+                                                <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                  <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее сообщение</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                  <i class="fas fa-times  text-muted point"></i>
+                                                </div>
+                                                <div class="d-flex flex-wrap position-relative filter_card-item">
+                                                  <span class="border my-1 rounded p-2 mx-1 point filter_badge">Последнее сообщение</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">содержит</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">текст</span>
+                                                  <span class="border my-1  rounded p-2 mx-1 point filter_badge">вася</span>
+                                                  <i class="fas fa-times  text-muted point"></i>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex ">
+                  
+                                              <span class="text-muted point text_Decoration mr-2">+ условие</span>
+                                              <span class="text-muted point text_Decoration mr-2">+ группа условий</span>
+                                            </div>
+                                            <div class="position-absolute point filter_card-close bg-secondary">
+                                              <i class="fas fa-times  text-white"></i>
+                                            </div>
+                  
+                                          </div>
+                                          <div class="d-flex my-2">
+                                            <button type="button" class="d-block my-1 mr-2  btn btn-secondary">Сохранить</button>
+                                            <button type="button" class="d-block my-1 mr-2  btn btn-secondary">Сбросить фильтр</button>
+                                          </div>
+                                        </div>
+                  
+                                      </div>
+                  
+                                    </div>
+                                  </div>
+                  
+                                  <input type="text" class="form-control" placeholder="Поиск и фильтр"
+                                    aria-label="Text input with dropdown button">
+                  
+                                </div>
+                              </div>
+                            <div class="d-md-flex col-3 px-0 pr-1 col-xl-2 d-none align-items-center justify-content-end">
                                 <i class="fas fa-ellipsis-h point"></i>
                                 <p class="mb-0 ml-3 point">Добавить клиента</p>
                             </div>
@@ -273,6 +467,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="./js/clients.js"></script>
 </body>
 
 </html>

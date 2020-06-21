@@ -19,3 +19,10 @@ visibleBlock.addEventListener('click', (e)=>{
     toggleClientBlock.classList.toggle('infoViewers-hide');
     toggleClientBlock.classList.toggle('infoViewers-visible');
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        boundary: 'window'
+    })
+ })
+  

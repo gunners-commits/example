@@ -34,7 +34,7 @@ body, html{
 }
 
 .imgInMessage{
-    object-fit: cover; max-width: 250px;
+    object-fit: cover; max-width: 200px;
 }
 
 @media (max-width:768px){
@@ -52,6 +52,16 @@ body, html{
 .profile_img{
     border-radius: 50% !important;
     width: 90px !important; height: 90px !important; 
+}
+
+.client_img{
+    border-radius: 50% !important;
+    min-width: 90px !important; height: 90px !important; 
+}
+
+
+.fa-upload-icon-client {
+    position: absolute; left:42% !important;top: 40%;
 }
 
 .fa-edit-icon{
@@ -73,7 +83,7 @@ body, html{
 }
 
 .page_client-chat{
-    height: 300px !important;
+    height: 350px !important;
 }
 
 .delete:hover{
@@ -351,7 +361,7 @@ body, html{
 .message_settings-my {
     cursor: pointer;
     visibility: hidden;
-    top: 10px;
+    top: 5px;
     left: 10px;
 
     font-size: 20px;
@@ -360,7 +370,7 @@ body, html{
 .message_settings{
     visibility: hidden;
     cursor: pointer;
-    top: 10px;
+    top: 5px;
     right: 10px;
     font-size: 20px;
 }
@@ -428,12 +438,22 @@ body, html{
 }
 
 .chat_main{
-    height: 90% !important;
+    height: 93% !important;
     
 }
 
 
 .channel-item:hover > .crossChannel, .Integration-item:hover > .crossChannel {
+    display: block !important;
+}
+
+.note > i{
+    display: none;
+    top: 1px;
+    right: 2px;
+}
+
+.note:hover > i{
     display: block !important;
 }
 
@@ -470,7 +490,7 @@ body, html{
     background-color: white;
     border-top: 1px solid #DEE2E6;
     z-index: 20;
-    height: 10% !important;
+    height: 7% !important;
     bottom:0;
     max-width: inherit;
     width: 100%;
@@ -564,7 +584,7 @@ body, html{
 }
 
 .channel_ic{
-font-size: 18px;
+font-size: 25px;
 }
 
 .wa{
@@ -603,8 +623,8 @@ font-size: 18px;
     position: absolute;
     bottom: -2px;
     left: -2px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;  
     background-color: red; 
 }
@@ -615,8 +635,8 @@ font-size: 18px;
     position: absolute;
     bottom: -2px;
     left: -2px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;  
     background-color: #8AC176; 
 }
@@ -655,6 +675,7 @@ font-size: 14px !important;
 }
 
 .filter_dropdown{
+    max-height: 500px;
     position: absolute;
     transform: translate3d(0px, 38px, 0px);
     top: 5px;
@@ -667,6 +688,10 @@ font-size: 14px !important;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     min-width: 100%;
+}
+
+.filter_dropdown-show__mobile{
+    display: block;
 }
 
 .filter_dropdown-show{
@@ -690,19 +715,65 @@ font-size: 14px !important;
     word-wrap: break-word;
 }
 
+span:hover > .cross{
+    visibility: visible;
+}
+
 .cross{
-    right: 5px;
-    top:2px;
+    visibility: hidden;
+    right:0px;
+    top:0px;
 }
 
 .table_first-colone{
     width: 60px !important;
 }
 
-.chat_client-sec{
-    height: 40% !important;
+.channel_select{
+    top: -50px;
+    left: 15px;
 }
 
-.chat_client-first{
-    height: 60% !important;
+.title_edit{
+    position: absolute;
+    right: 0;
+}
+
+.filter_badge{
+    min-width: 80px !important;
+    max-width: 200px !important;
+}
+
+.filter_card-item > i{
+    align-self: center;
+    margin-left: 15px;
+}
+
+.text-overflow{
+    text-overflow: ellipsis;
+}
+
+.segments_item{
+    max-width: 130px; overflow: hidden;  vertical-align: bottom;white-space: pre;
+}
+
+.filter_card-close{
+    box-sizing: border-box;
+    width: 30px ;
+    text-align: center;
+    vertical-align: middle ;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ced4da;
+    top: -15px;
+    right: -15px;
+}
+
+.filter_card-close > i{
+    margin-top: 6px;
+    z-index: 99;
+}
+
+.max-content-height{
+    height: max-content;
 }
