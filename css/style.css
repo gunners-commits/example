@@ -239,6 +239,8 @@ body, html{
 
 .write_first{
     height: 6% !important;
+    padding-left:  10px !important;
+    padding-right:  10px !important;
     
 }
 
@@ -658,7 +660,7 @@ font-size: 14px !important;
     /* background-color: white; */
     width: 40px !important;
     right: 5px; 
-    bottom: -2px;
+    bottom: 18px;
     position: absolute;
     display: block;
     /* text-align: right; */
@@ -674,8 +676,12 @@ font-size: 14px !important;
     border: 1px solid #ced4da !important; 
 }
 
-.filter_dropdown{
+.filter_max-height{
     max-height: 500px;
+}
+
+.filter_dropdown{
+    
     position: absolute;
     transform: translate3d(0px, 38px, 0px);
     top: 5px;
@@ -776,4 +782,16 @@ span:hover > .cross{
 
 .max-content-height{
     height: max-content;
+}
+
+/* .focus:focus{
+    
+} */
+
+.focus{
+    /* outline: none; */
+    max-width: 300px;
+    min-width: 120px;
+    word-break: break-all;
+    resize: none;
 }
