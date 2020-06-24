@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotBand</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0cbc9e8cc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid navbar navbar-white">
+        <a href="./" class="navbar-brand text-dark d-flex align-items-center">
+            <img src="./assets/img/logo.png" alt="" class="img-fluid"/>
+            <h1 class="h5 ml-3 mt-3 logo">BotBand</h1>
+        </a>
+    </div>
+    
+    <div class="col-11 col-md-6 col-lg-4  mx-auto mt-5">
+        <form method="" action="">
+            <h4 class="font-weight-bold h4">Восстановление пароля</h4>
+            <div class="input-group input-group-sm mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-unlock-alt"></i></span>
+                </div>
+                <input placeholder="Новый пароль" name="password" type="password" class="form-control col-9 col-sm-8 col-xl-6 col-lg-8" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-unlock-alt"></i></span>
+                </div>
+                <input placeholder="Повтор пароля" name="password" type="password" class="form-control col-9 col-sm-8  col-xl-6 col-lg-8" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <span class="text-danger  newPasError ">Оба пароля не совпадают или пароль слишком слабый</span>
+            <div class=" mt-4">
+                <button type="button" class="btn btn-primary  btn_newPas">Сохранить</button>
+                
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/form.js"></script>
+</body>
+</html>

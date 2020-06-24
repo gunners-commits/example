@@ -27,14 +27,16 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-sm"><i class="far fa-envelope"></i></span>
                     </div>
-                    <input placeholder="Email" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    <input placeholder="Email" name="email" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 </div>
+                <span class="text-danger emailError ">Неверный Email</span>
                 <div class=" d-flex justify-content-between mt-4">
-                    <button class="btn btn-primary col-6">Войти</button>
+                    <button type="button" class="btn btn-primary col-6 btn_res">Войти</button>
                     <a href="./index.html" class="btn btn-link h6">назад ко входу</a>
                 </div>
               </form>
         </div>
     </main>
+    <script src="./js/form.js"></script>
 </body>
 </html>

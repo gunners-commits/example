@@ -14,6 +14,17 @@ body, html{
     
 }
 
+.emailError{
+    display: none;
+}
+
+.passError{
+    display: none;
+}
+
+.newPasError{
+    display: none;
+}
 
 .inputMain{
     margin-top: 150px;
