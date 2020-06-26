@@ -98,7 +98,7 @@ body, html{
 }
 
 .page_client-chat{
-    height: 350px !important;
+    height: 50% !important;
 }
 
 .delete:hover{
