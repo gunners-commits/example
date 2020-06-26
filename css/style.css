@@ -38,6 +38,10 @@ body, html{
     height: 60px;
 }
 
+.text-gray{
+    color: #606060 !important;
+}
+
 .link_Img-Profile{
     width:35px !important ; height: 35px !important ; 
     object-fit: cover;
@@ -386,10 +390,6 @@ body, html{
     top: 5px;
     right: 10px;
     font-size: 20px;
-}
-
-.table_remove-items{
-    cursor: pointer;
 }
 
 .chat_message-img{
