@@ -48,6 +48,14 @@ body, html{
     object-position: center;
 }
 
+.watch{
+    display: none !important;
+}
+
+.show:hover .watch{
+    display: inline-block !important;
+}
+
 .imgInMessage{
     object-fit: cover; max-width: 200px;
 }
@@ -71,7 +79,7 @@ body, html{
 
 .client_img{
     border-radius: 50% !important;
-    min-width: 90px !important; height: 90px !important; 
+    min-width: 80px !important; height: 80px !important; 
 }
 
 
@@ -84,7 +92,7 @@ body, html{
 }
 
 .fa-upload-chat{
-    top:54.5px  !important;
+    top:42px  !important;
     left: calc(50% - 8px);
 }
 
@@ -98,7 +106,7 @@ body, html{
 }
 
 .page_client-chat{
-    height: 50% !important;
+    height: 45% !important;
 }
 
 .delete:hover{
@@ -220,7 +228,35 @@ body, html{
     }
 }
 
+@media  (max-width:993px){
+    .message_settings-my {
+        top: 0 !important;
+
+    }
+    
+    .message_settings{
+        top: 0 !important;
+
+    }
+}
+
 @media  (min-width:993px){
+    .message_settings-my {
+        cursor: pointer;
+        visibility: hidden;
+        top: 0;
+        left: -10px;
+    
+        font-size: 20px;
+    }
+    
+    .message_settings{
+        visibility: hidden;
+        cursor: pointer;
+        top: 0;
+        right:  -10px;
+        font-size: 20px;
+    }
     .page_main{
         box-sizing: border-box;
         max-width: calc(100% - 90px ) !important; 
@@ -301,7 +337,7 @@ body, html{
 }
 
 .chat_avatar-lg{
-    width: 125px; object-fit: cover; height: 125px;
+    width: 100px; object-fit: cover; height: 100px;
 }
 
 .chat_with:hover .chat_ellips {
@@ -319,7 +355,7 @@ body, html{
     width: 25px;
     height: 12px;
     z-index: 99;
-    top: 27px;
+    top: 15px;
     right: 5px;
     
 }
@@ -360,7 +396,7 @@ body, html{
     cursor: pointer !important;
 }
 
-.message:hover .message_settings-my, .message:hover .message_settings, .message:hover .time_message{
+.message:hover .message_settings-my, .message:hover .message_settings, .message:hover .time_message, .message:hover .message_settings-img, .message:hover .message_settings-my--img{
     visibility: visible;
 }
 
@@ -375,11 +411,28 @@ body, html{
     font-weight: bold;
 }
 
+.message_settings-my--img{
+    cursor: pointer;
+    visibility: hidden;
+    top: calc(50% - 10px);
+    left: -25px;
+
+    font-size: 20px;
+}
+
+.message_settings-img{
+    visibility: hidden;
+    cursor: pointer;
+    top: calc(50% - 10px);
+    right:  -25px;
+    font-size: 20px;
+}
+
 .message_settings-my {
     cursor: pointer;
     visibility: hidden;
-    top: 5px;
-    left: 10px;
+    top: calc(50% - 10px);
+    left: -25px;
 
     font-size: 20px;
 }
@@ -387,15 +440,13 @@ body, html{
 .message_settings{
     visibility: hidden;
     cursor: pointer;
-    top: 5px;
-    right: 10px;
+    top: calc(50% - 10px);
+    right:  -25px;
     font-size: 20px;
 }
 
 .chat_message-img{
-    
-    /* height: 100px !important; */
-    /* width: 250px !important;  */
+
     width: max-content  !important;
 }
 
@@ -505,7 +556,7 @@ body, html{
     z-index: 20;
     height: 7% !important;
     bottom:0;
-    max-width: inherit;
+    /* max-width: inherit; */
     width: 100%;
 }
 
@@ -622,6 +673,31 @@ font-size: 25px;
     
 }
 
+.cloud-payments{
+    color: #3A3862 !important;
+    background-color: white !important;
+}
+
+.robo-kassa{
+    color: white !important;
+    background-color: #3068B3 !important;
+}
+
+.yandex-cassa{
+    color: white !important;
+    background-color:#0C1D40 !important;
+}
+
+.oauth{
+    color: white !important;
+    background-color: #0E6D9D !important;
+}
+
+.google-doc{
+    color: white !important;
+    background-color: #20A464 !important; 
+}
+
 .field_item:hover .hideEdit{
     display: inline-block !important;
 }   
@@ -670,8 +746,9 @@ font-size: 14px !important;
 .chat_info-time{
     /* background-color: white; */
     width: 40px !important;
-    right: 5px; 
-    bottom: 18px;
+    right: 5px;
+    font-size: 14px;
+    bottom: 20px;
     position: absolute;
     display: block;
     /* text-align: right; */
@@ -689,6 +766,10 @@ font-size: 14px !important;
 
 .filter_max-height{
     max-height: 500px;
+}
+
+.filter_max-height-mob{
+    max-height: 250px;
 }
 
 .filter_dropdown{
@@ -724,6 +805,11 @@ font-size: 14px !important;
 }
 
 .chat_contact-edit{
+    top: 0px;
+    right: -20px;
+}
+
+.chat_name-edit{
     top: 0px;
     right: -20px;
 }
@@ -771,19 +857,14 @@ span:hover > .cross{
 }
 
 .segments_item{
-    max-width: 130px; overflow: hidden;  vertical-align: bottom;white-space: pre;
+    max-width: 100%; overflow: hidden;  vertical-align: bottom;white-space: pre;
 }
 
 .filter_card-close{
     box-sizing: border-box;
-    width: 30px ;
     text-align: center;
-    vertical-align: middle ;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #ced4da;
-    top: -15px;
-    right: -15px;
+    top: -13px;
+    right: -6px;
 }
 
 .filter_card-close > i{
@@ -795,14 +876,31 @@ span:hover > .cross{
     height: max-content;
 }
 
-/* .focus:focus{
-    
-} */
-
 .focus{
-    /* outline: none; */
     max-width: 300px;
     min-width: 120px;
     word-break: break-all;
     resize: none;
+}
+
+.contact_value:hover .contact_value-pen, .contact_value:hover .contact_value-pen-client{
+display: block !important;
+}
+
+.contact_value-pen{
+    left: 5px;
+    top: 2px;
+    display: none !important;
+    
+}
+
+.contact_value-pen-client{
+    right: -35px;
+    top: 2px;
+    display: none !important;
+    
+}
+
+.text-underline:hover{
+    text-decoration: underline;
 }

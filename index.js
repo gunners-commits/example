@@ -13,7 +13,15 @@ $(function () {
     })
  })
 
- $('#integration_settings').on('show.bs.modal', function (event) {
+$('#integration_settings').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) 
+    var recipient = button.data('whatever') 
+
+    var modal = $(this)
+    modal.find('.modal-title').text(recipient)
+})
+
+$('#contact_value').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) 
     var recipient = button.data('whatever') 
 
@@ -87,8 +95,9 @@ let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive'),
     navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
 
 
-
-navbarTogglerIcon.addEventListener('click', (e)=>{
-    chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
-    chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
-});
+if(navbarTogglerIcon){
+    navbarTogglerIcon.addEventListener('click', (e)=>{
+        chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
+        chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
+    });
+}
