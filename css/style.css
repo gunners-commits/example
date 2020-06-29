@@ -822,6 +822,11 @@ span:hover > .cross{
     visibility: visible;
 }
 
+.border-focus:focus{
+    border: 1px solid  gray !important;
+    box-shadow: none !important;
+}
+
 .cross{
     visibility: hidden;
     right:0px;
