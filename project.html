@@ -482,7 +482,7 @@
                                 <div class="form-group row mt-3 ">
                                     <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 1
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 1"></i>
+                                        <i class="fas fa-pencil-alt hideEdit d-none " data-toggle="modal" data-target="#modalField" data-whatever="Переменная 1"></i>
                                         </label>
                                         
                                     </div>
@@ -497,9 +497,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
+                                    <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between align-items-center">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 2
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 2"></i>
+                                        <i class="fas fa-pencil-alt hideEdit d-none " data-toggle="modal" data-target="#modalField" data-whatever="Переменная 2"></i>
                                         </label>
                                         
                                     </div>
@@ -516,7 +516,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 3
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 3"></i>
+                                        <i class="fas fa-pencil-alt hideEdit d-none " data-toggle="modal" data-target="#modalField" data-whatever="Переменная 3"></i>
                                         </label>
                                         
                                     </div>
@@ -529,9 +529,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <button class="btn btn-primary ">Добавить категорию</button>
-                                </div>                         
+                                                      
                             </div>
                                 
                             <div class="mt-5">
@@ -548,9 +546,8 @@
                                 <div class="form-group row mt-3 ">
                                     <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 1
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 1"></i>
-                                        </label>
-                                        
+                                        <i class="fas fa-pencil-alt hideEdit d-none "  data-toggle="modal" data-target="#modalField" data-whatever="Переменная 1"></i>
+                                        </label>                                 
                                     </div>
                                     
                                     <div class="col-md-6 d-flex ">
@@ -565,7 +562,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 2
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 2"></i>
+                                        <i class="fas fa-pencil-alt hideEdit d-none "  data-toggle="modal" data-target="#modalField" data-whatever="Переменная 2"></i>
                                         </label>
                                         
                                     </div>
@@ -582,7 +579,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4 col-xl-3 field_item d-flex justify-content-between">
                                         <label for="variable-1" class=" col-form-label text-secondary">Переменная 3
-                                        <i class="fas fa-pencil-alt hideEdit d-none " type="button" data-toggle="modal" data-target="#modalField" data-whatever="Переменная 3"></i>
+                                        <i class="fas fa-pencil-alt hideEdit d-none " data-toggle="modal" data-target="#modalField" data-whatever="Переменная 3"></i>
                                         </label>
                                         
                                     </div>
@@ -597,15 +594,18 @@
                                 </div>                             
                             </div>
                                 <div class="form-group row mt-4">
-                                    <p class="col-md-4 col-xl-3 col-form-label text-dark">Добавить поле</p>
+                                    
+                                    <div class="col-md-4 col-xl-3 col-form-label text-dark">
+                                        <button class="btn btn-primary p-1 badge p-2">Добавить категорию</button>
+                                    </div>   
                                     <div class="col-md-6  ml-3">
                                         <div class="row">
                                             <div class="mr-1 my-1 ">
-                                                <div type="button" data-toggle="modal" data-target="#modalField" data-whatever="да/нет" class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn"><span>да/нет</span></div>
+                                                <div type="button" data-toggle="modal" data-target="#modalField" data-whatever="да/нет" class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn"><span>+ да/нет</span></div>
                                             </div>
                                             <div class="mr-1 my-1 ">
                                                 <div type="button" data-toggle="modal" data-target="#modalField" data-whatever="json" class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>json</span></div>
+                                                    <span>+ json</span></div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
@@ -613,7 +613,7 @@
                                                 data-toggle="modal" data-target="#modalField"
                                                 data-whatever="число"
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>число</span></div>
+                                                    <span>+ число</span></div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
@@ -621,13 +621,13 @@
                                                 data-toggle="modal" data-target="#modalField"
                                                 data-whatever="текст"
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                   <span>текст</span></div>
+                                                   <span>+ текст</span></div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
                                                 <div type="button" data-toggle="modal" data-target="#modalField" data-whatever="дата"
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>дата</span>
+                                                    <span>+ дата</span>
                                                 </div>
 
                                             </div>
@@ -636,7 +636,7 @@
                                                 data-toggle="modal" data-target="#modalField"
                                                 data-whatever="связь"
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>связь</span></div>
+                                                    <span>+ связь</span></div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
@@ -644,19 +644,19 @@
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
                                                     <i class="fas fa-pencil-alt hideEdit d-none" type="button"
                                                         data-toggle="modal" data-target="#modalField"
-                                                        data-whatever="файл"></i><span>файл</span></div>
+                                                        data-whatever="файл"></i><span>+ файл</span></div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
                                                 <div type="button" data-toggle="modal" data-target="#modalField"  data-whatever="картинка"
                                                     class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>картинка</span>
+                                                    <span>+ картинка</span>
                                                 </div>
 
                                             </div>
                                             <div class="mr-1 my-1 ">
                                                 <div type="button" data-toggle="modal" data-target="#modalField" data-whatever="аудио" class="point position-relative badge badge-light border text-black-50 rounded-lg d-inline-block px-2 py-2 text-white btn">
-                                                    <span>аудио</span>
+                                                    <span>+ аудио</span>
                                                 </div>
 
                                             </div>

@@ -1,7 +1,21 @@
 'use strict';
 
-let deleteIcon = document.querySelectorAll('.deleteIcon');
 
+
+let deleteIcon = document.querySelectorAll('.deleteIcon');
+let overScroll = document.querySelectorAll('.overScroll-watch');
+
+overScroll.forEach((e)=>{
+    e.addEventListener('mouseout', function(){
+        console.log(e)
+        e.classList.toggle('overScroll');
+        e.classList.toggle('overScroll-Y')
+    });
+    e.addEventListener('mouseover', function(){
+        e.classList.toggle('overScroll');
+        e.classList.toggle('overScroll-Y')
+    });
+});
 
 const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
@@ -9,7 +23,8 @@ const tooltip = document.querySelector('#tooltip');
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
-        boundary: 'window'
+        boundary: 'scrollParent',
+        
     })
  })
 

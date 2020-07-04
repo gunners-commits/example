@@ -57,7 +57,8 @@ body, html{
 }
 
 .imgInMessage{
-    object-fit: cover; max-width: 200px;
+    object-fit: cover; max-width: 300px; min-width: 200px;
+    max-height: 300px; min-height: 200px;
 }
 
 @media (max-width:768px){
@@ -351,6 +352,8 @@ body, html{
     }
 }
 
+
+
 .chat_ellips {
     width: 25px;
     height: 12px;
@@ -366,7 +369,7 @@ body, html{
     transform: rotate(90deg);
 }
 
-.message:not(.chat_message-img){
+.message_from-him{
     background: #F6F6F6 ;
 }
 
@@ -474,9 +477,28 @@ body, html{
     border-radius: 8px !important;
 }
 
+.overScroll-Y{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.overScroll-Y::-webkit-scrollbar{
+    width: 3px !important;
+}
+
+.overScroll-Y::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.overScroll-Y::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 8px;
+}
+
 .overScroll{
     overflow-y: scroll !important;
     overflow-x: hidden !important;
+    
 }
 
 .overScroll::-webkit-scrollbar{
@@ -668,6 +690,7 @@ font-size: 25px;
 
 
 .hideEdit{
+    cursor: pointer !important;
     position: absolute;
     left: calc(50% - 8px) ;
     
@@ -768,8 +791,20 @@ font-size: 14px !important;
     max-height: 500px;
 }
 
+.filter_max-height{
+    max-height: 500px;
+}
+
+.filter_max-height-seg{
+    height: 456px !important ;
+}
+
 .filter_max-height-mob{
     max-height: 250px;
+}
+
+.filter_dropdown-menu{
+    min-width: 50px !important;
 }
 
 .filter_dropdown{
@@ -797,7 +832,7 @@ font-size: 14px !important;
 }
 
 .filter_dropdown-hide{
-    display: none;
+    display: none !important;
 }
 
 .text_Decoration:hover{
@@ -889,11 +924,12 @@ span:hover > .cross{
 }
 
 .contact_value:hover .contact_value-pen, .contact_value:hover .contact_value-pen-client{
-display: block !important;
+    display: inline-block !important;
 }
 
 .contact_value-pen{
-    left: 5px;
+    padding-left: 31px;
+    right: -20px;
     top: 2px;
     display: none !important;
     
