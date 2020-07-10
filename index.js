@@ -7,13 +7,13 @@ let overScroll = document.querySelectorAll('.overScroll-watch');
 
 overScroll.forEach((e)=>{
     e.addEventListener('mouseout', function(){
-        console.log(e)
+        
         e.classList.toggle('overScroll');
         e.classList.toggle('overScroll-Y')
     });
     e.addEventListener('mouseover', function(){
-        e.classList.toggle('overScroll');
-        e.classList.toggle('overScroll-Y')
+        e.classList.add('overScroll');
+        e.classList.remove('overScroll-Y')
     });
 });
 
