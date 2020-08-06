@@ -6,7 +6,9 @@ window.onload = function(){
        });
 }
 
-
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({ boundary: 'scrollParent',})
+})
 
 let btnMobChat = document.querySelector('.chats_mobile');
 let filterBtnMob = document.querySelector('#filterBtnMob');

@@ -29,7 +29,8 @@
 
                 </div>
                 <div class="ml-3 d-flex justify-content-center flex-column">
-                    <h2   class="h5 position-relative mb-1 focus point d-flex" ><div id="focusName" contenteditable class="focus form-control border-focus pl-1">Василий Пупкин</div> 
+                    <h2   class="h5 position-relative mb-1 focus point d-flex" >
+                        <span id="focusName" contenteditable class="focus form-control border-focus pl-1">Василий Пупкин</span> 
                         <i class="fas fa-pen h5 point text-black-50 ml-3 d-inline-block"></i>
                     </h2>
                     <div class="d-flex align-items-center">@<span class="font-weight-bold pl-1 point form-control d-inline-block border-focus" contenteditable id="focusEmail">vpupkin</span><i class="fas h5 point text-black-50 ml-3 fa-pen"></i></div>
@@ -58,7 +59,7 @@
                 <div class="form-group row mb-5">
                     <label for="WhatsApp" class="col-sm-3 col-form-label text-secondary">WhatsApp Num</label>
                     <div class="col-sm-6">
-                        <input type="phone" class="form-control" id="WhatsApp">
+                        <input type="text" class="form-control" id="WhatsApp">
                     </div>
                 </div>
 
@@ -73,12 +74,10 @@
                 </div>
 
                 <div class="form-group row ">
-                    <label for="language" class="  col-3 my-2  col-lg-1 text-secondary">Язык</label>
+                    <label class="  col-3 my-2  col-lg-1 text-secondary">Язык</label>
                     
                     <div class="col-4  col-lg-2">
-                        <button class="btn btn-white dropdown-toggle " type="button" id="hours"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Часовой пояс
+                        <button class="btn btn-white dropdown-toggle " type="button" id="hours" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Часовой пояс
                         </button>
                         <div class="dropdown-menu" aria-labelledby="hours">
                             <a class="dropdown-item" href="#">UTC +3 Москва</a> 

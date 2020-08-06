@@ -2,7 +2,6 @@
 
 
 
-let deleteIcon = document.querySelectorAll('.deleteIcon');
 let overScroll = document.querySelectorAll('.overScroll-watch');
 
 overScroll.forEach((e)=>{
@@ -21,83 +20,78 @@ const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
 
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip({
-        boundary: 'scrollParent',
-        
-    })
- })
+
 
 $('#integration_settings').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) 
-    var recipient = button.data('whatever') 
+    let button = $(event.relatedTarget) 
+    let recipient = button.data('whatever') 
 
-    var modal = $(this)
+    let modal = $(this)
     modal.find('.modal-title').text(recipient)
 })
 
 $('#contact_value').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) 
-    var recipient = button.data('whatever') 
+    let  button = $(event.relatedTarget) 
+    let recipient = button.data('whatever') 
 
-    var modal = $(this)
+    let modal = $(this)
     modal.find('.modal-title').text(recipient)
 })
 
 $('#edit').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) 
-    var recipient = button.data('whatever') 
+    let button = $(event.relatedTarget) 
+    let recipient = button.data('whatever') 
 
-    var modal = $(this)
+    let modal = $(this)
     modal.find('.modal-title').text('Проект ' + recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#channel').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) 
-    var recipient = button.data('whatever') 
+    let button = $(event.relatedTarget) 
+    let recipient = button.data('whatever') 
 
-    var modal = $(this)
+    let modal = $(this)
     modal.find('.modal-title').text(recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#deleteProject').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget)
-    var recipient = button.data('whatever') 
-    var modal = $(this)
+    let button = $(event.relatedTarget)
+    let recipient = button.data('whatever') 
+    let modal = $(this)
     modal.find('.name_project').text(recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#deleteMembers').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget)
-    var recipient = button.data('whatever') 
-    var modal = $(this)
+    let button = $(event.relatedTarget)
+    let recipient = button.data('whatever') 
+    let modal = $(this)
     modal.find('.modal-title').html('<span class="font-weight-bold ">'+recipient+'</span>')
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#delteIntegration').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget)
-    var recipient = button.data('whatever') 
-    var modal = $(this)
+    let button = $(event.relatedTarget)
+    let recipient = button.data('whatever') 
+    let modal = $(this)
     modal.find('.modal-title').html('Удалить интеграцию <span class="font-weight-bold ">'+recipient+'</span>?')
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#modalField').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget)
-    var recipient = button.data('whatever') 
-    var modal = $(this)
+    let button = $(event.relatedTarget)
+    let recipient = button.data('whatever') 
+    let modal = $(this)
     modal.find('.modal-title').html( recipient)
     modal.find('.modal-body input').val(recipient)
 })
 
 $('#addTag').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget)
-    var recipient = button.data('whatever') 
-    var modal = $(this)
+    let button = $(event.relatedTarget)
+    let recipient = button.data('whatever') 
+    let modal = $(this)
     modal.find('.modal-title').html()
     modal.find('.modal-body input').val(recipient)
 })
@@ -111,7 +105,7 @@ let chatsMobileAdaptive = document.querySelector('.chats-mobile-adaptive'),
 
 
 if(navbarTogglerIcon){
-    navbarTogglerIcon.addEventListener('click', (e)=>{
+    navbarTogglerIcon.addEventListener('click', ()=>{
         chatsMobileAdaptive.classList.remove('sidebar_mobile-seek')
         chatsMobileAdaptive.classList.add('sidebar_mobile-hide')
     });
